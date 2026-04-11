@@ -1,9 +1,7 @@
 # site properties and page defaults
 title: DUCK LAB
-subtitle: 
-description:  description of  lab
-#header: images/background.jpg
-#footer: images/background.jpg
+subtitle: Data, Uncertainty, Constraints, Knowledge
+description: The DUCK Lab at Imperial College London builds AI systems that don't just learn from data, but reason over it — combining machine learning with structured knowledge, constraints, and calibrated uncertainty.
 proofer: false
 
 
