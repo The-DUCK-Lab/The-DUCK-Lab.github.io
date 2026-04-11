@@ -10,10 +10,13 @@ nav:
   <div style="flex: 1; min-width: 300px; text-align: left;">
         <h1 style="margin-top: 0; text-align: left;">About</h1>
         <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus purus in massa tempor nec feugiat nisl pretium fusce.
+          Data, Uncertainty, Constraints, Knowledge — four words that sit at the heart of everything we do. At the DUCK Lab, we build AI systems that don't just learn from data, but reason over it: systems that acknowledge what they don't know, respect the rules of the world they operate in, and draw on structured knowledge to make better decisions. We're a small, tight-knit team at Imperial College London, united by a belief that we don't need to compromise between a powerful AI and a safe one.
         </p>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus purus in massa tempor nec feugiat nisl pretium fusce.  
+          Interested in joining the lab? Contact me at firstname initial DOT surname AT imperial.ac.uk.
+        </p>
+        <p>
+          Come for the research, stay for the good company!
         </p>
   </div>
 
