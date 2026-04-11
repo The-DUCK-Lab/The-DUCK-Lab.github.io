@@ -1,6 +1,6 @@
 ---
 name: "Mihaela Catalina<br>Stoian"
-image: images/photo.jpg
+image: images/mihaela.png
 description: Research Associate
 role: postdoc
 homepage: https://mihaela-stoian.github.io/
