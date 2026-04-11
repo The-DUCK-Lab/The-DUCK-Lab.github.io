@@ -14,7 +14,4 @@ links:
   orcid: 0000-0001-9313-753X
 ---
 
- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus purus in massa tempor nec feugiat nisl pretium fusce.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus purus in massa tempor nec feugiat nisl pretium fusce. 
- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus purus in massa tempor nec feugiat nisl pretium fusce.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus purus in massa tempor nec feugiat nisl pretium fusce. 
+Eleonora Giunchiglia is an Assistant Professor at Imperial College London in the Department of Electrical and Electronic Engineering and a member of Imperial-X (I-X). She completed her DPhil at the University of Oxford in 2022, followed by a postdoctoral position at TU Wien before joining Imperial in 2024. Her research lies at the intersection of machine learning and formal reasoning, with a focus on neuro-symbolic AI — developing methods that integrate logical constraints and background knowledge into neural networks to make them safer, more reliable, and trustworthy, with applications ranging from constrained generative models to theorem proving and verifiable LLM reasoning.
