@@ -1,6 +1,6 @@
 ---
 name: Dylan John
-image: images/dylan.png
+image: images/dylan.jpg
 role: phd
 order: 60
 description: "PhD Student<br>(co-supervised)"

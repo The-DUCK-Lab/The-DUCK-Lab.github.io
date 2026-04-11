@@ -1,6 +1,6 @@
 ---
 name: "Mihaela Catalina<br>Stoian"
-image: images/mihaela.png
+image: images/mihaela.jpg
 description: Research Associate
 role: postdoc
 order: 30
