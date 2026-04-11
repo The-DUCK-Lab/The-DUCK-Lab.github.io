@@ -1,6 +1,6 @@
 ---
 name: Dylan John
-image: images/photo.jpg
+image: images/dylan.png
 role: phd
 description: PhD Student
 homepage:  
