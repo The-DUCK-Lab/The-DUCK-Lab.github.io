@@ -67,8 +67,8 @@
   plugin: sources.py
   file: sources.yaml
 - id: doi:10.48550/arXiv.2503.05954
-  title: 'A Survey on Tabular Data Generation: Utility, Alignment, Fidelity, Privacy,
-    and Beyond'
+  title: 'A Survey on Deep Learning Approaches for Tabular Data Generation: Utility,
+    Alignment, Fidelity, Privacy, Diversity, and Beyond'
   authors:
   - "Mihaela C\u0103t\u0103lina Stoian"
   - Eleonora Giunchiglia
