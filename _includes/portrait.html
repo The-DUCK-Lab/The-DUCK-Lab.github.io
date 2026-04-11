@@ -25,7 +25,7 @@
     <img
       src="{{ member.image | relative_url | uri_escape }}"
       class="portrait-image"
-      alt="member portrait"
+      alt="{% if member.name %}Portrait of {{ member.name | regex_strip }}{% else %}Lab member portrait{% endif %}"
       loading="lazy"
       {% include fallback.html %}
     >
