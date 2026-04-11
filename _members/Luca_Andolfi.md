@@ -2,7 +2,7 @@
 name: Luca Andolfi
 image: images/photo.jpg
 description: Research Fellow
-role: postdoc
+role: fellow
 homepage:  
 links:
   email:  

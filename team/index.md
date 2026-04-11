@@ -37,7 +37,11 @@ nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 {% endcomment %}
 
 
-{% include list.html data="members" component="member-bio" %}
+{% include list.html data="members" component="member-bio" filter="role == 'professor'" %}
+{% include list.html data="members" component="member-bio" filter="role == 'fellow'" %}
+{% include list.html data="members" component="member-bio" filter="role == 'postdoc'" %}
+{% include list.html data="members" component="member-bio" filter="role == 'phd' && name != 'Dylan John'" %}
+{% include list.html data="members" component="member-bio" filter="name == 'Dylan John'" %}
 
 {% comment %}
 ## Principal Investigator

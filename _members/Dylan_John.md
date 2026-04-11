@@ -2,7 +2,7 @@
 name: Dylan John
 image: images/dylan.png
 role: phd
-description: PhD Student
+description: "PhD Student<br>(co-supervised)"
 homepage:  
 links:
   email:  
