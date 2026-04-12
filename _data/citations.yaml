@@ -154,14 +154,14 @@
   - Alex Tatomir
   - "Mihaela C\u0103t\u0103lina Stoian"
   - Thomas Lukasiewicz
-  publisher: "International Journal of Approximate Reasoning"
+  publisher: International Journal of Approximate Reasoning
   date: '2024-08-01'
-  link: https://www.sciencedirect.com/science/article/pii/S0888613X24000112
+  link: https://doi.org/g566hc
   type: paper
-  description: "We present CCN+, a neuro-symbolic framework that integrates logical\
-    \ requirements directly into neural network outputs using inference rules to ensure\
-    \ compliance, and adapts the standard binary cross-entropy loss for constraint\
-    \ satisfaction in deep learning."
+  description: We present CCN+, a neuro-symbolic framework that integrates logical
+    requirements directly into neural network outputs using inference rules to ensure
+    compliance, and adapts the standard binary cross-entropy loss for constraint satisfaction
+    in deep learning.
   plugin: sources.py
   file: sources.yaml
 - id: doi:10.1007/978-3-031-71167-1_12
