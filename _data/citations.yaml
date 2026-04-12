@@ -148,20 +148,19 @@
   plugin: sources.py
   file: sources.yaml
 - id: doi:10.1007/978-3-031-71167-1_12
-  title: 'ULLER: A Unified Language for Learning and Reasoning'
+  title: "ULLER: A Unified Language for\_Learning and\_Reasoning"
   authors:
   - Emile van Krieken
   - Samy Badreddine
   - Robin Manhaeve
   - Eleonora Giunchiglia
-  publisher: "NeSy (Spotlight)"
+  publisher: NeSy (Spotlight)
   date: '2024-01-01'
-  link: https://link.springer.com/chapter/10.1007/978-3-031-71167-1_12
+  link: https://doi.org/hbwt83
   type: paper
-  description: "We introduce ULLER, a unified language for learning and reasoning\
-    \ that standardises how background knowledge is expressed across neuro-symbolic\
-    \ AI frameworks. ULLER provides first-order logic syntax with multiple semantic\
-    \ interpretations."
+  description: We introduce ULLER, a unified language for learning and reasoning that
+    standardises how background knowledge is expressed across neuro-symbolic AI frameworks.
+    ULLER provides first-order logic syntax with multiple semantic interpretations.
   plugin: sources.py
   file: sources.yaml
 - id: doi:10.48550/arXiv.2402.18285
