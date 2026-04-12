@@ -24,7 +24,8 @@
   type: paper
   image: /images/research/picsar.png
   description: Description
-  publisher: preprint
+  publisher: "ACL (Findings)"
+  date: '2026-03-01'
   buttons:
     - type: source
       text: Code
@@ -36,7 +37,8 @@
   type: paper
   image: /images/research/survey_tab_synth.png
   description: "We review deep generative modelling approaches for tabular data from the perspective of four types of requirements: utility of the synthetic data, alignment of the synthetic data with domain-specific knowledge, statistical fidelity of the synthetic data distribution compared to the real data distribution, and privacy-preserving capabilities."
-  publisher: preprint
+  publisher: TMLR
+  date: '2026-01-01'
 
 
 

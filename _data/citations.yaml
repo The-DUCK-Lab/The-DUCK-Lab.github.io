@@ -54,8 +54,8 @@
   - Pasquale Minervini
   - Eleonora Giunchiglia
   - Shay B. Cohen
-  publisher: preprint
-  date: '2025-01-01'
+  publisher: "ACL (Findings)"
+  date: '2026-03-01'
   link: https://doi.org/hbg52k
   type: paper
   image: /images/research/picsar.png
@@ -73,8 +73,8 @@
   - "Mihaela C\u0103t\u0103lina Stoian"
   - Eleonora Giunchiglia
   - Thomas Lukasiewicz
-  publisher: preprint
-  date: '2025-01-01'
+  publisher: TMLR
+  date: '2026-01-01'
   link: https://doi.org/hbg52m
   type: paper
   image: /images/research/survey_tab_synth.png
