@@ -158,6 +158,7 @@
   date: '2024-08-01'
   link: https://doi.org/g566hc
   type: paper
+  image: /images/research/CCN+.png
   description: We present CCN+, a neuro-symbolic framework that integrates logical
     requirements directly into neural network outputs using inference rules to ensure
     compliance, and adapts the standard binary cross-entropy loss for constraint satisfaction
