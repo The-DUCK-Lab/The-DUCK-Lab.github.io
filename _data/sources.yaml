@@ -74,6 +74,7 @@
 
 - id: doi:10.1007/978-3-031-71167-1_12
   type: paper
+  image: /images/research/ULLER.png
   publisher: "NeSy (Spotlight)"
   description: "We introduce ULLER, a unified language for learning and reasoning that standardises how background knowledge is expressed across neuro-symbolic AI frameworks. ULLER provides first-order logic syntax with multiple semantic interpretations."
 
