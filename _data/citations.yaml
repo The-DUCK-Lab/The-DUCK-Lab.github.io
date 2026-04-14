@@ -11,7 +11,14 @@
   link: https://doi.org/hbg5mp
   type: paper
   image: /images/research/r4rr.png
-  description: "Neurosymbolic AI models are prone to reasoning shortcuts \u2014 learning spurious correlations rather than the intended concepts. We introduce Prototypical Neurosymbolic architectures that avoid shortcuts at their root cause by training models to satisfy background knowledge while accounting for input similarity to a handful of labelled datapoints. We validate on the rsbench benchmark suite across synthetic (MNIST-EvenOdd, Kand-Logic) and real-world (BDD-OIA) tasks, showing significant improvements in learning the right concepts even in extremely low data regimes."
+  description: "Neurosymbolic AI models are prone to reasoning shortcuts \u2014 learning\
+    \ spurious correlations rather than the intended concepts. We introduce Prototypical\
+    \ Neurosymbolic architectures that avoid shortcuts at their root cause by training\
+    \ models to satisfy background knowledge while accounting for input similarity\
+    \ to a handful of labelled datapoints. We validate on the rsbench benchmark suite\
+    \ across synthetic (MNIST-EvenOdd, Kand-Logic) and real-world (BDD-OIA) tasks,\
+    \ showing significant improvements in learning the right concepts even in extremely\
+    \ low data regimes."
   buttons:
   - type: source
     text: Code
@@ -75,7 +82,13 @@
   link: https://doi.org/hbg52k
   type: paper
   image: /images/research/picsar.png
-  description: "We propose PiCSAR (Probabilistic Confidence Selection And Ranking), a simple training-free method for best-of-n sampling that scores candidate reasoning chains using the joint log-likelihood of the reasoning and final answer. This naturally decomposes into reasoning confidence and answer confidence. PiCSAR achieves substantial gains across diverse benchmarks (+10.18 on MATH500, +9.81 on AIME2025), outperforming baselines with at least 2\xd7 fewer samples in 16 out of 20 comparisons."
+  description: "We propose PiCSAR (Probabilistic Confidence Selection And Ranking),\
+    \ a simple training-free method for best-of-n sampling that scores candidate reasoning\
+    \ chains using the joint log-likelihood of the reasoning and final answer. This\
+    \ naturally decomposes into reasoning confidence and answer confidence. PiCSAR\
+    \ achieves substantial gains across diverse benchmarks (+10.18 on MATH500, +9.81\
+    \ on AIME2025), outperforming baselines with at least 2\xD7 fewer samples in 16\
+    \ out of 20 comparisons."
   buttons:
   - type: source
     text: Code
