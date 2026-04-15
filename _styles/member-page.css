@@ -92,6 +92,10 @@
   align-items: start;
 }
 
+.member-sidebar-col:only-child {
+  grid-column: 1/-1;
+}
+
 .member-sidebar-heading {
   font-family: var(--serif);
   font-size: 1.6rem;
@@ -130,7 +134,7 @@
 
 .citation-compact-title {
   font-family: var(--serif);
-  font-size: 1.05rem;
+  font-size: 1.2rem;
   font-weight: 400;
   color: var(--primary);
   text-decoration: none;
@@ -143,7 +147,7 @@
 }
 
 .citation-compact-meta {
-  font-size: 0.78rem;
+  font-size: 0.88rem;
   color: var(--ink-mute);
   display: flex;
   flex-wrap: wrap;
