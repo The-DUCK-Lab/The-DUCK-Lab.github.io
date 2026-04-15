@@ -1,5 +1,6 @@
 ---
 name: Lohith Konathala
+scholar_name: "Lohith Konathala"
 image: images/lohith.jpeg
 role: phd
 order: 40

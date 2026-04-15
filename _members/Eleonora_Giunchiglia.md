@@ -1,5 +1,6 @@
 ---
 name: Eleonora Giunchiglia
+scholar_name: "Eleonora Giunchiglia"
 image: images/eleonora.jpg
 role: professor
 order: 10

@@ -1,5 +1,6 @@
 ---
 name: Luca Andolfi
+scholar_name: "Luca Andolfi"
 image: images/luca.jpeg
 description: Research Fellow
 role: fellow

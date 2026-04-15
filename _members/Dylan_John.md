@@ -1,5 +1,6 @@
 ---
 name: Dylan John
+scholar_name: "Dylan John"
 image: images/dylan.jpg
 role: phd
 order: 60
