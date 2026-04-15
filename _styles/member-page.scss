@@ -80,8 +80,12 @@
   border-bottom-color: var(--accent);
 }
 
+.member-profile-section {
+  padding-bottom: 40px;
+}
+
 .member-papers-section {
-  padding-top: 20px;
+  padding-top: 0;
 }
 
 @media (max-width: 900px) {
