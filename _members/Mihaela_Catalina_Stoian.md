@@ -1,5 +1,6 @@
 ---
 name: "Mihaela Catalina<br>Stoian"
+scholar_name: "Mihaela Cătălina Stoian"
 image: images/mihaela.jpg
 description: Research Associate
 role: postdoc

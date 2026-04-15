@@ -1,5 +1,6 @@
 ---
-name: Joshua Ong 
+name: Joshua Ong
+scholar_name: "Joshua Ong Jun Leang"
 image: images/joshua.webp
 role: phd
 order: 50

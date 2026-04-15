@@ -41,3 +41,29 @@ layout: home
     </div>
   </div>
 </section>
+
+{% assign cite_name = page.scholar_name | default: page.name | strip_html | strip %}
+{% assign member_papers = site.data.citations | where_exp: "paper", "paper.authors contains cite_name" | sort: "date" | reverse %}
+{% if member_papers.size > 0 %}
+<section>
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title">Papers</h2>
+    </div>
+    {% assign paper_years = "2026,2025,2024,2023,2022" | split: "," %}
+    {% for year in paper_years %}
+      {% assign year_papers = member_papers | where_exp: "p", "p.date contains year" %}
+      {% if year_papers.size > 0 %}
+        <div class="pub-year">
+          <h2 class="pub-year-heading" id="papers-{{ year }}">{{ year }}</h2>
+          <div class="pub-list">
+            {% for paper in year_papers %}
+              {% include citation.html lookup=paper.id style="rich" %}
+            {% endfor %}
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
