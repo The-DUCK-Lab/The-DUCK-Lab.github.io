@@ -140,15 +140,21 @@
 /* ------------------------------------------------------------------ */
 /* Prev / next arrows                                                 */
 /* ------------------------------------------------------------------ */
-.team-featured-stack {
-  position: relative;
+.team-featured-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+
+.team-featured-row > .team-featured-stack {
+  flex: 1 1 0;
+  min-width: 0;
 }
 
 .team-arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 3;
+  flex: 0 0 auto;
   width: 44px;
   height: 44px;
   display: flex;
@@ -173,20 +179,7 @@
 .team-arrow:hover {
   opacity: 1;
   color: var(--accent);
-  transform: translateY(-50%) scale(1.2);
-}
-
-.team-arrow-prev {
-  left: -52px;
-}
-
-.team-arrow-next {
-  right: -52px;
-}
-
-@media (max-width: 1200px) {
-  .team-arrow-prev { left: -40px; }
-  .team-arrow-next { right: -40px; }
+  transform: scale(1.2);
 }
 
 /* ------------------------------------------------------------------ */
