@@ -37,7 +37,7 @@
           <h3 class="team-panel-name">
             {% assign parts = member.name | strip_html | split: " " %}
             {% if parts.size >= 2 %}
-              <em>{{ parts[0] }}</em><br>{% for part in parts offset: 1 %}{{ part }} {% endfor %}
+              <em>{{ parts[0] }}</em> {% for part in parts offset: 1 %}{{ part }} {% endfor %}
             {% else %}
               {{ member.name }}
             {% endif %}
@@ -47,19 +47,20 @@
             {{ member.content | markdownify | remove: "<p>" | remove: "</p>" }}
           </div>
 
-          <div class="team-panel-links">
-            {% for link in member.links %}
-              {% assign key = link[0] %}
-              {% assign value = link[1] %}
-              {% if value and value != "" %}
-                {% include button.html type=key link=value style="bare" %}
-              {% endif %}
-            {% endfor %}
+          <div class="team-panel-actions">
+            <div class="team-panel-links">
+              {% for link in member.links %}
+                {% assign key = link[0] %}
+                {% assign value = link[1] %}
+                {% if value and value != "" %}
+                  {% include button.html type=key link=value style="bare" %}
+                {% endif %}
+              {% endfor %}
+            </div>
+            {% if member.url %}
+              <a href="{{ member.url | relative_url | uri_escape }}" class="btn btn-primary team-panel-cta">View full profile</a>
+            {% endif %}
           </div>
-
-          {% if member.url %}
-            <a href="{{ member.url | relative_url | uri_escape }}" class="btn btn-primary">View full profile</a>
-          {% endif %}
         </div>
       </article>
     {% endfor %}
