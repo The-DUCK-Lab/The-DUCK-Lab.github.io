@@ -8,12 +8,13 @@
 {% assign default_member = sorted | first %}
 
 <div class="team-showcase" data-active="{{ default_member.slug }}">
-  <div class="team-featured-wrapper">
-  <button class="team-arrow team-arrow-prev" aria-label="Previous team member">
-    <svg viewBox="0 0 20 36" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon points="17,2 3,18 17,34"/></svg>
-  </button>
-
   <div class="team-featured-stack">
+    <button class="team-arrow team-arrow-prev" aria-label="Previous team member">
+      <svg viewBox="0 0 14 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon points="13,1 1,12 13,23"/></svg>
+    </button>
+    <button class="team-arrow team-arrow-next" aria-label="Next team member">
+      <svg viewBox="0 0 14 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon points="1,1 13,12 1,23"/></svg>
+    </button>
     {% for member in sorted %}
       {% assign is_active = false %}
       {% if member.slug == default_member.slug %}{% assign is_active = true %}{% endif %}
@@ -62,11 +63,6 @@
         </div>
       </article>
     {% endfor %}
-  </div>
-
-  <button class="team-arrow team-arrow-next" aria-label="Next team member">
-    <svg viewBox="0 0 20 36" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon points="3,2 17,18 3,34"/></svg>
-  </button>
   </div>
 
   <div class="team-thumbs" role="tablist" aria-label="Team members">
