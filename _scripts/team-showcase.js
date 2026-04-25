@@ -41,6 +41,31 @@
       });
     });
 
+    function currentIndex() {
+      for (var i = 0; i < thumbs.length; i++) {
+        if (thumbs[i].classList.contains('is-active')) return i;
+      }
+      return 0;
+    }
+
+    var prevBtn = showcase.querySelector('.team-arrow-prev');
+    var nextBtn = showcase.querySelector('.team-arrow-next');
+    var last = thumbs.length - 1;
+
+    if (prevBtn) {
+      prevBtn.addEventListener('click', function () {
+        var idx = currentIndex();
+        activate(thumbs[idx === 0 ? last : idx - 1].dataset.target);
+      });
+    }
+
+    if (nextBtn) {
+      nextBtn.addEventListener('click', function () {
+        var idx = currentIndex();
+        activate(thumbs[idx === last ? 0 : idx + 1].dataset.target);
+      });
+    }
+
     showcase.addEventListener('keydown', function (e) {
       if (!e.target.classList || !e.target.classList.contains('team-thumb')) return;
       var keys = ['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown', 'Home', 'End'];
