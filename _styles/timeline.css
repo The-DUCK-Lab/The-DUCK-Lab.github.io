@@ -97,7 +97,8 @@
     margin-bottom: 8px;
   }
   .timeline-item::before {
-    left: 4px;
+    left: -36px;
+    top: 4px;
   }
 }
 
