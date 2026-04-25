@@ -121,41 +121,58 @@
 /* ------------------------------------------------------------------ */
 /* Prev / next arrows                                                 */
 /* ------------------------------------------------------------------ */
-.team-featured-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.team-featured-wrapper .team-featured-stack {
-  flex: 1;
-  min-width: 0;
+.team-featured-stack {
+  position: relative;
 }
 
 .team-arrow {
-  flex-shrink: 0;
-  width: 28px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: none;
   border: none;
   padding: 0;
   cursor: pointer;
-  color: var(--ink-mute);
-  opacity: 0.35;
-  transition: opacity var(--transition), transform var(--transition);
-  line-height: 0;
+  color: var(--primary);
+  opacity: 0.4;
+  transition: opacity var(--transition), color var(--transition), transform var(--transition);
 }
 
 .team-arrow svg {
-  width: 100%;
-  height: auto;
+  width: 14px;
+  height: 24px;
   fill: currentColor;
+  display: block;
 }
 
 .team-arrow:hover {
-  opacity: 0.7;
-  transform: scale(1.15);
+  opacity: 1;
+  color: var(--accent);
+  transform: translateY(-50%) scale(1.2);
 }
 
+.team-arrow-prev {
+  left: -52px;
+}
+
+.team-arrow-next {
+  right: -52px;
+}
+
+@media (max-width: 1200px) {
+  .team-arrow-prev {
+    left: -40px;
+  }
+  .team-arrow-next {
+    right: -40px;
+  }
+}
 /* ------------------------------------------------------------------ */
 /* Thumbnail strip — click to swap the featured panel                 */
 /* ------------------------------------------------------------------ */
