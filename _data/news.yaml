@@ -1,3 +1,7 @@
+- date: 04-2026
+  title: Paper accepted at ICML 2026
+  description: "Our paper [Can I Have Your Order? Monte-Carlo Tree Search for Slot Filling Ordering in Diffusion Language Models](https://arxiv.org/abs/2602.12586) has been accepted at ICML 2026."
+
 - date: 03-2026
   title: Paper accepted at ACL (Findings)
   description: "Our paper [PiCSAR: Probabilistic Confidence Selection And Ranking for Reasoning Chains](https://doi.org/hbg52k) has been accepted at ACL (Findings) 2026."
