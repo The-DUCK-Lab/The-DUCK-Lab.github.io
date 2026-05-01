@@ -1,26 +1,26 @@
 # DO NOT EDIT, GENERATED AUTOMATICALLY
 
 - id: doi:10.48550/arXiv.2602.12586
-  title: 'Can I Have Your Order? Monte-Carlo Tree Search for Slot Filling Ordering
-    in Diffusion Language Models'
+  title: Can I Have Your Order? Monte-Carlo Tree Search for Slot Filling Ordering
+    in Diffusion Language Models
   authors:
   - Joshua Ong Jun Leang
   - Yu Zhao
-  - "Mihaela Cătălina Stoian"
+  - "Mihaela C\u0103t\u0103lina Stoian"
   - Wenda Li
   - Shay B. Cohen
   - Eleonora Giunchiglia
   publisher: ICML
   date: '2026-07-01'
-  link: https://arxiv.org/abs/2602.12586
+  link: https://doi.org/hbz7sm
   type: paper
-  description: "We introduce McDiffuSE, a framework that formulates slot selection
+  description: We introduce McDiffuSE, a framework that formulates slot selection
     in Masked Diffusion Models as decision making and optimises infilling orders through
     Monte Carlo Tree Search. Look-ahead simulations evaluate partial completions before
     commitment, systematically exploring the combinatorial space of generation orders.
     McDiffuSE achieves average gains of 3.2% over autoregressive baselines and 8.0%
     over plan-and-infill baselines, with notable improvements of 19.5% on MBPP and
-    4.9% on MATH500."
+    4.9% on MATH500.
   plugin: sources.py
   file: sources.yaml
 - id: doi:10.48550/arXiv.2510.25497
