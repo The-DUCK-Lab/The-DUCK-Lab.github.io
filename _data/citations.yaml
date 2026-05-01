@@ -14,6 +14,7 @@
   date: '2026-07-01'
   link: https://doi.org/hbz7sm
   type: paper
+  image: /images/research/mcdiffuse.png
   description: We introduce McDiffuSE, a framework that formulates slot selection
     in Masked Diffusion Models as decision making and optimises infilling orders through
     Monte Carlo Tree Search. Look-ahead simulations evaluate partial completions before
