@@ -23,11 +23,12 @@ footer {
 }
 
 .footer-brand .logo-mark {
-  width: 46px;
-  height: 46px;
-  --logo-frame: #ffffff;
-  --logo-duck: var(--secondary);
-  --logo-bill: var(--accent);
+  width: auto;
+  height: 50px;
+  flex-shrink: 0;
+  background: var(--bg);
+  border-radius: 8px;
+  padding: 6px 8px;
 }
 
 .footer-brand span {
