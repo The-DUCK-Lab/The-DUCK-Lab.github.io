@@ -88,7 +88,7 @@
         <img src="{{ member.image | relative_url | uri_escape }}" alt="{{ member.name | strip_html }}">
         <span class="team-thumb-overlay">
           <span class="team-thumb-name">{{ member.name | strip_html }}</span>
-          <span class="team-thumb-role">{{ member.description | strip_html }}</span>
+          <span class="team-thumb-role">{{ member.description | replace: "<br>", " " | strip_html }}</span>
         </span>
       </button>
     {% endfor %}
