@@ -4,10 +4,12 @@
   style: contain
   image: images/projects/pythagoras_logo.png
   link: https://pythagoras-lm.github.io
+  huggingface: https://huggingface.co/Pythagoras-LM
   description: A compute-efficient family of Lean theorem provers that combines autoregressive and diffusion-based models with curriculum learning and synthetic data generation. Augmented Lean Formalisation expands proof corpora without recompilation, achieving competitive results at small (4B parameter) scale.
   repo: Pythagoras-LM/Pythagoras-Prover
   tags:
     - model
+    - dataset
 
 - title: "PiShield"
   subtitle: "A PyTorch Package for Learning with Requirements"

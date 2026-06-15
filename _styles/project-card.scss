@@ -103,6 +103,13 @@
   align-items: center;
 }
 
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
 .project-link {
   display: inline-flex;
   align-items: center;

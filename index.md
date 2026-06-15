@@ -117,9 +117,14 @@ nav:
               <div class="project-subtitle">{{ project.subtitle }}</div>
             {% endif %}
             <p class="project-desc">{{ project.description }}</p>
-            {% if project.link %}
-              <a href="{{ project.link }}" class="project-link" target="_blank" rel="noopener">Read more</a>
-            {% endif %}
+            <div class="project-links">
+              {% if project.link %}
+                <a href="{{ project.link }}" class="project-link" target="_blank" rel="noopener">Read more</a>
+              {% endif %}
+              {% if project.huggingface %}
+                <a href="{{ project.huggingface }}" class="project-link" target="_blank" rel="noopener">Hugging Face</a>
+              {% endif %}
+            </div>
           </div>
         </article>
       {% endfor %}
