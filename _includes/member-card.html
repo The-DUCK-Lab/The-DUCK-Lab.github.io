@@ -20,7 +20,7 @@
   <img src="{{ member.image | relative_url | uri_escape }}" alt="{{ member.name | strip_html }}">
   <div class="person-overlay">
     <div class="person-name">{{ member.name }}</div>
-    <div class="person-role">{{ member.description | strip_html }}</div>
+    <div class="person-role">{{ member.description }}</div>
   </div>
 </article>
 {% endcapture %}
