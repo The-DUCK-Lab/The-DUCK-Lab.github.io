@@ -88,44 +88,6 @@ nav:
 </section>
 
 <!-- ============================================================ -->
-<!-- FEATURED PROJECTS                                              -->
-<!-- ============================================================ -->
-<section>
-  <div class="container">
-    <div class="section-head">
-      <h2 class="section-title">Featured <em>projects</em></h2>
-      <a href="{{ '/projects/' | relative_url }}" class="section-meta">See all →</a>
-    </div>
-
-    <div class="projects">
-      {% assign featured = site.data.projects | where: "group", "featured" %}
-      {% for project in featured %}
-        <article class="project-card">
-          <div class="project-img">
-            {% if project.image %}
-              <img src="{{ project.image | relative_url }}" alt="{{ project.title }}">
-            {% endif %}
-          </div>
-          <div class="project-body">
-            {% if project.tags %}
-              <div class="project-tags">
-                {% for tag in project.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
-              </div>
-            {% endif %}
-            <h3 class="project-title">{{ project.title }}</h3>
-            {% if project.subtitle %}
-              <div class="project-subtitle">{{ project.subtitle }}</div>
-            {% endif %}
-            <p class="project-desc">{{ project.description }}</p>
-            {% include project-links.html project=project %}
-          </div>
-        </article>
-      {% endfor %}
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================ -->
 <!-- TEAM                                                           -->
 <!-- ============================================================ -->
 <section class="section-alt">
