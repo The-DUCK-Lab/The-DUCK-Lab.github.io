@@ -1,0 +1,15 @@
+{%- comment -%}
+  Renders Read more / GitHub / Hugging Face links for a project card.
+  Caller passes `include.project`.
+{%- endcomment -%}
+<div class="project-actions">
+  {% if include.project.link %}
+    <a href="{{ include.project.link }}" class="project-link" target="_blank" rel="noopener">Read more</a>
+  {% endif %}
+  {% if include.project.repo %}
+    <a href="https://github.com/{{ include.project.repo }}" class="project-link" target="_blank" rel="noopener">GitHub</a>
+  {% endif %}
+  {% if include.project.huggingface %}
+    <a href="{{ include.project.huggingface }}" class="project-link" target="_blank" rel="noopener">Hugging Face</a>
+  {% endif %}
+</div>

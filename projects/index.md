@@ -32,14 +32,7 @@ nav:
               <div class="project-subtitle">{{ project.subtitle }}</div>
             {% endif %}
             <p class="project-desc">{{ project.description }}</p>
-            <div class="project-actions">
-              {% if project.link %}
-                <a href="{{ project.link }}" class="project-link" target="_blank" rel="noopener">Read more</a>
-              {% endif %}
-              {% if project.repo %}
-                <a href="https://github.com/{{ project.repo }}" class="project-link" target="_blank" rel="noopener">GitHub</a>
-              {% endif %}
-            </div>
+            {% include project-links.html project=project %}
           </div>
         </article>
       {% endfor %}
