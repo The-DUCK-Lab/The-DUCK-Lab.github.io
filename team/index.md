@@ -13,12 +13,9 @@ nav:
       <span class="section-meta">Imperial College London</span>
     </div>
 
-    {% assign pi = site.members | where: "role", "professor" | first %}
-    {% include member-pi.html member=pi %}
-
     <div class="team-grid">
-      {% assign others = site.members | where_exp: "m", "m.role != 'professor'" | sort: "order" %}
-      {% for m in others %}
+      {% assign members = site.members | sort: "order" %}
+      {% for m in members %}
         {% include member-card.html member=m %}
       {% endfor %}
     </div>
