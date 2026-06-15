@@ -5,7 +5,7 @@ image: images/eleonora.jpg
 role: professor
 order: 10
 #affiliation: Imperial
-description: "Assistant Professor<br>Principal Investigator of DUCK LAB"
+description: "Assistant Professor<br>PI of DUCK Lab"
 homepage:  
 links:
   email:  
