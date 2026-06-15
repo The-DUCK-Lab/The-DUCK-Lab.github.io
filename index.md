@@ -90,7 +90,7 @@ nav:
 <!-- ============================================================ -->
 <!-- TEAM                                                           -->
 <!-- ============================================================ -->
-<section class="section-alt">
+<section>
   <div class="container">
     <div class="section-head">
       <h2 class="section-title">The <em>team</em></h2>
