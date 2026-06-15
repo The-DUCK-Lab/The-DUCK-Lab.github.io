@@ -48,25 +48,7 @@ layout: home
 
 {% assign member_news = "" | split: "" %}
 {% for item in site.data.news %}
-  {% assign matched = false %}
   {% if item.members contains first_name %}
-    {% assign matched = true %}
-  {% endif %}
-  {% unless matched %}
-    {% if item.description contains first_name or item.title contains first_name %}
-      {% assign matched = true %}
-    {% endif %}
-  {% endunless %}
-  {% unless matched %}
-    {% for paper in member_papers %}
-      {% unless matched %}
-        {% if item.description contains paper.link %}
-          {% assign matched = true %}
-        {% endif %}
-      {% endunless %}
-    {% endfor %}
-  {% endunless %}
-  {% if matched %}
     {% assign member_news = member_news | push: item %}
   {% endif %}
 {% endfor %}

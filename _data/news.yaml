@@ -1,5 +1,6 @@
 - date: 06-2026
   title: Invited talk at CILC 2026
+  members: [Eleonora]
   description: "Eleonora will give an invited talk at [CILC 2026](https://cilc2026.unife.it/speakers), the 41st Italian Conference on Computational Logic."
 
 - date: 06-2026
@@ -9,33 +10,41 @@
 
 - date: 05-2026
   title: Talk at OxBridge Women in CS Conference
+  members: [Eleonora]
   description: "On 9 May, Eleonora spoke at the [OxBridge Women in CS Conference](https://www.oxwocs.com/events/6k75eef2rhctgi5alaxi7g8sfcs8d0) — a particularly special one for her, as she was herself an OxWoCS member during her PhD!"
 
 - date: 04-2026
   title: Paper accepted at ICML 2026
+  members: [Joshua, Mihaela, Eleonora]
   description: "Our paper [Can I Have Your Order? Monte-Carlo Tree Search for Slot Filling Ordering in Diffusion Language Models](https://doi.org/hbz7sm) has been accepted at ICML 2026."
 
 - date: 03-2026
   title: Paper accepted at ACL (Findings)
+  members: [Joshua, Eleonora]
   description: "Our paper [PiCSAR: Probabilistic Confidence Selection And Ranking for Reasoning Chains](https://doi.org/hbg52k) has been accepted at ACL (Findings) 2026."
 
 - date: 02-2026
   title: Joshua joins MBZUAI as visiting student
+  members: [Joshua]
   description: "Joshua is joining [MBZUAI](https://mbzuai.ac.ae/) as a visiting student, where he will be working on Theorem Proving with LLMs. Please contact him if you want to collaborate!"
 
 - date: 01-2026
   title: Survey published in TMLR
+  members: [Mihaela, Eleonora]
   description: "Our survey [A Survey on Deep Learning Approaches for Tabular Data Generation](https://doi.org/hbg52m) has been published in Transactions on Machine Learning Research (TMLR)."
 
 - date: 10-2025
   title: Frontiers in AI invited talk at ECAI 2025
+  members: [Eleonora]
   description: "Eleonora gave one of the [Frontiers in AI](https://ecai2025.org/frontiers-in-ai/) invited talks at ECAI 2025."
 
 - date: 08-2025
   title: AI for Math Fund
   subtitle: "Constraining LLMs for Theorem Proving: A Neurosymbolic Approach to Guaranteed Autoformalization"
+  members: [Eleonora]
   description: "Eleonora has been awarded an AI for Math grant. Read more [here](https://www.renaissancephilanthropy.org/constraining-llms-for-theorem-proving-a-neurosymbolic-approach-to-guaranteed-autoformalization)"
 
 - date: 07-2025
   title: Paper published at ECAI 2025
+  members: [Eleonora]
   description: "Eleonora's paper [A Posteriori Verification or a Priori Design? Navigating Requirements-Driven Deep Learning](https://ebooks.iospress.nl/doi/10.3233/FAIA250782) has been published at ECAI 2025."
