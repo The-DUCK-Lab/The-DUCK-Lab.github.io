@@ -4,7 +4,8 @@
 
 - date: 06-2026
   title: Pythagoras-Prover released!
-  description: "🚀 We are thrilled to announce the release of [Pythagoras-Prover](https://pythagoras-lm.github.io) — a compute-efficient family of Lean theorem provers built by Joshua, Mihaela, and Eleonora! Strong results at just 4B parameters, powered by Augmented Lean Formalisation. The models are now available on [Hugging Face](https://huggingface.co/Pythagoras-LM) 🤗"
+  members: [Joshua, Mihaela, Eleonora]
+  description: "🚀 We are thrilled to announce the release of [Pythagoras-Prover](https://pythagoras-lm.github.io) — a compute-efficient family of Lean theorem provers! Strong results at just 4B parameters, powered by Augmented Lean Formalisation. The models are now available on [Hugging Face](https://huggingface.co/Pythagoras-LM) 🤗"
 
 - date: 05-2026
   title: Talk at OxBridge Women in CS Conference
