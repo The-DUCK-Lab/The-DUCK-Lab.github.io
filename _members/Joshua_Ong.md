@@ -5,7 +5,12 @@ image: images/joshua.webp
 role: phd
 order: 50
 description: PhD Student
-homepage:  
+homepage:
+knows_about:
+  - LLM reasoning
+  - Theorem proving with large language models
+  - Diffusion models for code and proofs
+  - Verifiable LLM outputs
 links:
   email:  
   twitter: 

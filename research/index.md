@@ -35,3 +35,56 @@ nav:
     {% endfor %}
   </div>
 </section>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Published research — DUCK Lab",
+  "description": "{{ page.description | xml_escape }}",
+  "url": "{{ site.url }}{{ site.baseurl }}{{ page.url }}",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "{{ site.title | xml_escape }}",
+    "url": "{{ '/' | absolute_url }}"
+  },
+  "about": {
+    "@type": "ResearchOrganization",
+    "name": "DUCK Lab",
+    "url": "{{ '/' | absolute_url }}"
+  },
+  "mainEntity": {
+    "@type": "ItemList",
+    "numberOfItems": {{ citations.size }},
+    "itemListElement": [
+      {% for work in citations %}
+      {
+        "@type": "ListItem",
+        "position": {{ forloop.index }},
+        "item": {
+          "@type": "ScholarlyArticle",
+          "name": "{{ work.title | strip_html | xml_escape }}",
+          "headline": "{{ work.title | strip_html | xml_escape }}",
+          {% if work.description %}"abstract": "{{ work.description | strip_html | strip | xml_escape }}",{% endif %}
+          {% if work.link %}"url": "{{ work.link }}",
+          "sameAs": "{{ work.link }}",{% endif %}
+          {% if work.date %}"datePublished": "{{ work.date }}",{% endif %}
+          {% if work.image %}"image": "{{ work.image | absolute_url }}",{% endif %}
+          {% if work.id %}"identifier": "{{ work.id }}",{% endif %}
+          "author": [{% for a in work.authors %}
+            {"@type":"Person","name":"{{ a | xml_escape }}"}{% unless forloop.last %},{% endunless %}{% endfor %}
+          ]{% if work.publisher %},
+          "publisher": {
+            "@type": "Organization",
+            "name": "{{ work.publisher | xml_escape }}"
+          },
+          "isPartOf": {
+            "@type": "PublicationVolume",
+            "publisher": {"@type":"Organization","name":"{{ work.publisher | xml_escape }}"}
+          }{% endif %}
+        }
+      }{% unless forloop.last %},{% endunless %}{% endfor %}
+    ]
+  }
+}
+</script>

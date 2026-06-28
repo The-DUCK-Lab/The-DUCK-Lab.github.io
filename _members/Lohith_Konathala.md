@@ -5,7 +5,15 @@ image: images/lohith.jpeg
 role: phd
 order: 40
 description: PhD Student
-homepage:  
+homepage:
+alumni_of:
+  - name: University of Cambridge
+    url: https://www.cam.ac.uk
+knows_about:
+  - Neuro-symbolic AI in financial markets
+  - Constrained reinforcement learning
+  - Foundation models for trading
+  - Dynamic portfolio construction
 links:
   email:  
   twitter: 

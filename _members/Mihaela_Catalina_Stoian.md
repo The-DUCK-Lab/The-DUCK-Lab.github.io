@@ -6,6 +6,19 @@ description: Research Associate
 role: postdoc
 order: 30
 homepage: https://mihaela-stoian.github.io/
+alumni_of:
+  - name: University of Oxford
+    url: https://www.ox.ac.uk
+  - name: University of Edinburgh
+    url: https://www.ed.ac.uk
+awards:
+  - Oxford PhD Runner-up Prize (G-Research)
+knows_about:
+  - Neuro-symbolic AI
+  - Constrained generative models
+  - Tabular data generation
+  - Theorem proving with LLMs
+  - Logical requirements in deep learning
 links:
   email: mstoian@ic.ac.uk
   twitter: 

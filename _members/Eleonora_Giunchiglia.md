@@ -6,7 +6,21 @@ role: professor
 order: 10
 #affiliation: Imperial
 description: "Assistant Professor<br>PI of DUCK Lab"
-homepage:  
+homepage:
+alumni_of:
+  - name: University of Oxford
+    url: https://www.ox.ac.uk
+  - name: TU Wien
+    url: https://www.tuwien.at
+awards:
+  - AI for Math Fund Grant (2025)
+knows_about:
+  - Neuro-symbolic AI
+  - Constrained machine learning
+  - Verifiable LLM reasoning
+  - Theorem proving with large language models
+  - Logical constraints in neural networks
+  - Trustworthy AI
 links:
   email:  
   twitter: e_giunchiglia

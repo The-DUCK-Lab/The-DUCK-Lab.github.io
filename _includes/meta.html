@@ -123,6 +123,26 @@
   "logo": "{{ icon | absolute_url }}",
   "image": "{{ share | absolute_url }}",
   "description": "{{ site.description | xml_escape }}",
+  "foundingDate": "2024",
+  "keywords": "neuro-symbolic AI, constrained machine learning, theorem proving, large language models, verifiable reasoning, neural-symbolic integration, formal methods, knowledge graphs, autoformalization, calibrated uncertainty",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "South Kensington Campus, Exhibition Road",
+    "addressLocality": "London",
+    "postalCode": "SW7 2AZ",
+    "addressCountry": "GB"
+  },
+  "location": {
+    "@type": "Place",
+    "name": "Imperial College London, South Kensington Campus",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "South Kensington Campus, Exhibition Road",
+      "addressLocality": "London",
+      "postalCode": "SW7 2AZ",
+      "addressCountry": "GB"
+    }
+  },
   "parentOrganization": {
     "@type": "EducationalOrganization",
     "name": "Imperial College London",
@@ -197,11 +217,57 @@
     "@type": "ResearchOrganization",
     "name": "DUCK Lab",
     "url": "{{ '/' | absolute_url }}"
-  }{% if person_sameas.size > 0 %},
+  }{% if page.alumni_of %},
+  "alumniOf": [{% for alma in page.alumni_of %}
+    {
+      "@type": "EducationalOrganization",
+      "name": "{{ alma.name | xml_escape }}"{% if alma.url %},
+      "url": "{{ alma.url }}"{% endif %}
+    }{% unless forloop.last %},{% endunless %}{% endfor %}
+  ]{% endif %}{% if page.awards %},
+  "award": [{% for a in page.awards %}
+    "{{ a | xml_escape }}"{% unless forloop.last %},{% endunless %}{% endfor %}
+  ]{% endif %}{% if page.knows_about %},
+  "knowsAbout": [{% for k in page.knows_about %}
+    "{{ k | xml_escape }}"{% unless forloop.last %},{% endunless %}{% endfor %}
+  ]{% endif %}{% if person_sameas.size > 0 %},
   "sameAs": [{% for u in person_sameas %}
     "{{ u }}"{% unless forloop.last %},{% endunless %}{% endfor %}
   ]{% endif %}
 }
+</script>
+{% endif %}
+
+{%- comment -%}
+  ── BREADCRUMBLIST SCHEMA ──────────────────────────────────────
+  Tells Google the page's place in the site hierarchy so search
+  result snippets show Home › Team › Eleonora rather than the
+  raw URL. Members display under Team (the visible hierarchy)
+  even though their URL path is /members/.
+{%- endcomment -%}
+{% if page.url != "/" %}
+{%- assign crumbs = "" | split: "," -%}
+{%- capture crumb_home -%}
+{"@type":"ListItem","position":1,"name":"Home","item":"{{ '/' | absolute_url }}"}
+{%- endcapture -%}
+{%- assign crumbs = crumbs | push: crumb_home -%}
+{% if page.layout == "member" %}
+  {%- capture crumb_team -%}
+{"@type":"ListItem","position":2,"name":"Team","item":"{{ '/team/' | absolute_url }}"}
+  {%- endcapture -%}
+  {%- assign crumbs = crumbs | push: crumb_team -%}
+  {%- capture crumb_self -%}
+{"@type":"ListItem","position":3,"name":"{{ page.name | strip_html | xml_escape }}","item":"{{ url }}"}
+  {%- endcapture -%}
+  {%- assign crumbs = crumbs | push: crumb_self -%}
+{% else %}
+  {%- capture crumb_self -%}
+{"@type":"ListItem","position":2,"name":"{{ page.title | default: title | xml_escape }}","item":"{{ url }}"}
+  {%- endcapture -%}
+  {%- assign crumbs = crumbs | push: crumb_self -%}
+{% endif %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{% for c in crumbs %}{{ c }}{% unless forloop.last %},{% endunless %}{% endfor %}]}
 </script>
 {% endif %}
 
