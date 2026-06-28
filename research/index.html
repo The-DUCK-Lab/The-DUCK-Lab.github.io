@@ -85,6 +85,10 @@
   }
 }
 </script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://the-duck-lab.github.io/"},{"@type":"ListItem","position":2,"name":"Research","item":"https://the-duck-lab.github.io/research/"}]}
+</script>
+
 
 <link rel="alternate" type="application/rss+xml" href="https://the-duck-lab.github.io/feed.xml">
 
@@ -1298,6 +1302,354 @@
     
   </div>
 </section>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Published research — DUCK Lab",
+  "description": "Peer-reviewed publications from the DUCK Lab at Imperial College London on neuro-symbolic AI, constrained deep learning, tabular data generation, theorem proving, and verifiable LLM reasoning.",
+  "url": "https://the-duck-lab.github.io/research/",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "DUCK LAB",
+    "url": "https://the-duck-lab.github.io/"
+  },
+  "about": {
+    "@type": "ResearchOrganization",
+    "name": "DUCK Lab",
+    "url": "https://the-duck-lab.github.io/"
+  },
+  "mainEntity": {
+    "@type": "ItemList",
+    "numberOfItems": 11,
+    "itemListElement": [
+      
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "ScholarlyArticle",
+          "name": "Can I Have Your Order? Monte-Carlo Tree Search for Slot Filling Ordering in Diffusion Language Models",
+          "headline": "Can I Have Your Order? Monte-Carlo Tree Search for Slot Filling Ordering in Diffusion Language Models",
+          "abstract": "We introduce McDiffuSE, a framework that formulates slot selection in Masked Diffusion Models as decision making and optimises infilling orders through Monte Carlo Tree Search. Look-ahead simulations evaluate partial completions before commitment, systematically exploring the combinatorial space of generation orders. McDiffuSE achieves average gains of 3.2% over autoregressive baselines and 8.0% over plan-and-infill baselines, with notable improvements of 19.5% on MBPP and 4.9% on MATH500.",
+          "url": "https://doi.org/hbz7sm",
+          "sameAs": "https://doi.org/hbz7sm",
+          "datePublished": "2026-07-01",
+          "image": "https://the-duck-lab.github.io/images/research/mcdiffuse.png",
+          "identifier": "doi:10.48550/arXiv.2602.12586",
+          "author": [
+            {"@type":"Person","name":"Joshua Ong Jun Leang"},
+            {"@type":"Person","name":"Yu Zhao"},
+            {"@type":"Person","name":"Mihaela Cătălina Stoian"},
+            {"@type":"Person","name":"Wenda Li"},
+            {"@type":"Person","name":"Shay B. Cohen"},
+            {"@type":"Person","name":"Eleonora Giunchiglia"}
+          ],
+          "publisher": {
+            "@type": "Organization",
+            "name": "ICML"
+          },
+          "isPartOf": {
+            "@type": "PublicationVolume",
+            "publisher": {"@type":"Organization","name":"ICML"}
+          }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "ScholarlyArticle",
+          "name": "Right for the Right Reasons: Avoiding Reasoning Shortcuts via Prototypical Neurosymbolic AI",
+          "headline": "Right for the Right Reasons: Avoiding Reasoning Shortcuts via Prototypical Neurosymbolic AI",
+          "abstract": "Neurosymbolic AI models are prone to reasoning shortcuts — learning spurious correlations rather than the intended concepts. We introduce Prototypical Neurosymbolic architectures that avoid shortcuts at their root cause by training models to satisfy background knowledge while accounting for input similarity to a handful of labelled datapoints. We validate on the rsbench benchmark suite across synthetic (MNIST-EvenOdd, Kand-Logic) and real-world (BDD-OIA) tasks, showing significant improvements in learning the right concepts even in extremely low data regimes.",
+          "url": "https://doi.org/hbg5mp",
+          "sameAs": "https://doi.org/hbg5mp",
+          "datePublished": "2025-01-01",
+          "image": "https://the-duck-lab.github.io/images/research/r4rr.png",
+          "identifier": "doi:10.48550/arXiv.2510.25497",
+          "author": [
+            {"@type":"Person","name":"Luca Andolfi"},
+            {"@type":"Person","name":"Eleonora Giunchiglia"}
+          ],
+          "publisher": {
+            "@type": "Organization",
+            "name": "NeurIPS"
+          },
+          "isPartOf": {
+            "@type": "PublicationVolume",
+            "publisher": {"@type":"Organization","name":"NeurIPS"}
+          }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "ScholarlyArticle",
+          "name": "Beyond the convexity assumption: Realistic tabular data generation under quantifier-free real linear constraints",
+          "headline": "Beyond the convexity assumption: Realistic tabular data generation under quantifier-free real linear constraints",
+          "abstract": "We introduce the Disjunctive Refinement Layer (DRL), a novel layer designed to enforce the alignment of generated data with the background knowledge specified in user-defined constraints. DRL is the first method able to automatically make deep learning models inherently compliant with constraints as expressive as quantifier-free linear formulas, which can define non-convex and even disconnected spaces.",
+          "url": "https://doi.org/hbg46k",
+          "sameAs": "https://doi.org/hbg46k",
+          "datePublished": "2025-01-01",
+          "image": "https://the-duck-lab.github.io/images/research/DRL.png",
+          "identifier": "doi:10.48550/arXiv.2502.18237",
+          "author": [
+            {"@type":"Person","name":"Mihaela Cătălina Stoian"},
+            {"@type":"Person","name":"Eleonora Giunchiglia"}
+          ],
+          "publisher": {
+            "@type": "Organization",
+            "name": "ICLR"
+          },
+          "isPartOf": {
+            "@type": "PublicationVolume",
+            "publisher": {"@type":"Organization","name":"ICLR"}
+          }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "item": {
+          "@type": "ScholarlyArticle",
+          "name": "A Posteriori Verification or a Priori Design? Navigating Requirements-Driven Deep Learning",
+          "headline": "A Posteriori Verification or a Priori Design? Navigating Requirements-Driven Deep Learning",
+          "abstract": "We contrast two approaches to ensuring machine learning systems satisfy formal requirements in safety-critical settings: integrating requirements directly into model architecture and training (a priori design) versus analyzing trained models for desired properties (a posteriori verification).",
+          "url": "https://doi.org/hbwt5t",
+          "sameAs": "https://doi.org/hbwt5t",
+          "datePublished": "2025-07-10",
+          "image": "https://the-duck-lab.github.io/images/research/ECAI.png",
+          "identifier": "doi:10.3233/FAIA250782",
+          "author": [
+            {"@type":"Person","name":"Eleonora Giunchiglia"}
+          ],
+          "publisher": {
+            "@type": "Organization",
+            "name": "ECAI"
+          },
+          "isPartOf": {
+            "@type": "PublicationVolume",
+            "publisher": {"@type":"Organization","name":"ECAI"}
+          }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "item": {
+          "@type": "ScholarlyArticle",
+          "name": "PiCSAR: Probabilistic Confidence Selection And Ranking for Reasoning Chains",
+          "headline": "PiCSAR: Probabilistic Confidence Selection And Ranking for Reasoning Chains",
+          "abstract": "We propose PiCSAR (Probabilistic Confidence Selection And Ranking), a simple training-free method for best-of-n sampling that scores candidate reasoning chains using the joint log-likelihood of the reasoning and final answer. This naturally decomposes into reasoning confidence and answer confidence. PiCSAR achieves substantial gains across diverse benchmarks (+10.18 on MATH500, +9.81 on AIME2025), outperforming baselines with at least 2× fewer samples in 16 out of 20 comparisons.",
+          "url": "https://doi.org/hbg52k",
+          "sameAs": "https://doi.org/hbg52k",
+          "datePublished": "2026-03-01",
+          "image": "https://the-duck-lab.github.io/images/research/picsar.png",
+          "identifier": "doi:10.48550/arXiv.2508.21787",
+          "author": [
+            {"@type":"Person","name":"Joshua Ong Jun Leang"},
+            {"@type":"Person","name":"Zheng Zhao"},
+            {"@type":"Person","name":"Aryo Pradipta Gema"},
+            {"@type":"Person","name":"Sohee Yang"},
+            {"@type":"Person","name":"Wai-Chung Kwan"},
+            {"@type":"Person","name":"Xuanli He"},
+            {"@type":"Person","name":"Wenda Li"},
+            {"@type":"Person","name":"Pasquale Minervini"},
+            {"@type":"Person","name":"Eleonora Giunchiglia"},
+            {"@type":"Person","name":"Shay B. Cohen"}
+          ],
+          "publisher": {
+            "@type": "Organization",
+            "name": "ACL (Findings)"
+          },
+          "isPartOf": {
+            "@type": "PublicationVolume",
+            "publisher": {"@type":"Organization","name":"ACL (Findings)"}
+          }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 6,
+        "item": {
+          "@type": "ScholarlyArticle",
+          "name": "A Survey on Deep Learning Approaches for Tabular Data Generation: Utility, Alignment, Fidelity, Privacy, Diversity, and Beyond",
+          "headline": "A Survey on Deep Learning Approaches for Tabular Data Generation: Utility, Alignment, Fidelity, Privacy, Diversity, and Beyond",
+          "abstract": "We review deep generative modelling approaches for tabular data from the perspective of four types of requirements: utility of the synthetic data, alignment of the synthetic data with domain-specific knowledge, statistical fidelity of the synthetic data distribution compared to the real data distribution, and privacy-preserving capabilities.",
+          "url": "https://doi.org/hbg52m",
+          "sameAs": "https://doi.org/hbg52m",
+          "datePublished": "2026-01-01",
+          "image": "https://the-duck-lab.github.io/images/research/survey_tab_synth.png",
+          "identifier": "doi:10.48550/arXiv.2503.05954",
+          "author": [
+            {"@type":"Person","name":"Mihaela Cătălina Stoian"},
+            {"@type":"Person","name":"Eleonora Giunchiglia"},
+            {"@type":"Person","name":"Thomas Lukasiewicz"}
+          ],
+          "publisher": {
+            "@type": "Organization",
+            "name": "TMLR"
+          },
+          "isPartOf": {
+            "@type": "PublicationVolume",
+            "publisher": {"@type":"Organization","name":"TMLR"}
+          }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 7,
+        "item": {
+          "@type": "ScholarlyArticle",
+          "name": "How Realistic Is Your Synthetic Data? Constraining Deep Generative Models for Tabular Data",
+          "headline": "How Realistic Is Your Synthetic Data? Constraining Deep Generative Models for Tabular Data",
+          "abstract": "We show how deep generative models for tabular data can be constrained such that their generated samples are guaranteed to be compliant with given constraints. This is achieved by automatically parsing the constraints and transforming them into a Constraint Layer seamlessly integrated with the model.",
+          "url": "https://doi.org/hbg46z",
+          "sameAs": "https://doi.org/hbg46z",
+          "datePublished": "2024-01-01",
+          "image": "https://the-duck-lab.github.io/images/research/dgm+ll.png",
+          "identifier": "doi:10.48550/arXiv.2402.04823",
+          "author": [
+            {"@type":"Person","name":"Mihaela Cătălina Stoian"},
+            {"@type":"Person","name":"Salijona Dyrmishi"},
+            {"@type":"Person","name":"Maxime Cordy"},
+            {"@type":"Person","name":"Thomas Lukasiewicz"},
+            {"@type":"Person","name":"Eleonora Giunchiglia"}
+          ],
+          "publisher": {
+            "@type": "Organization",
+            "name": "ICLR"
+          },
+          "isPartOf": {
+            "@type": "PublicationVolume",
+            "publisher": {"@type":"Organization","name":"ICLR"}
+          }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 8,
+        "item": {
+          "@type": "ScholarlyArticle",
+          "name": "Deep generative models as an adversarial attack strategy for tabular machine learning",
+          "headline": "Deep generative models as an adversarial attack strategy for tabular machine learning",
+          "abstract": "We adapt popular tabular deep generative models into adversarial models and evaluate their effectiveness in generating realistic adversarial examples that conform to domain constraints.",
+          "url": "https://doi.org/hbg52n",
+          "sameAs": "https://doi.org/hbg52n",
+          "datePublished": "2024-01-01",
+          "image": "https://the-duck-lab.github.io/images/research/adv_gan.png",
+          "identifier": "doi:10.48550/arXiv.2409.12642",
+          "author": [
+            {"@type":"Person","name":"Salijona Dyrmishi"},
+            {"@type":"Person","name":"Mihaela Cătălina Stoian"},
+            {"@type":"Person","name":"Eleonora Giunchiglia"},
+            {"@type":"Person","name":"Maxime Cordy"}
+          ],
+          "publisher": {
+            "@type": "Organization",
+            "name": "ICMLC"
+          },
+          "isPartOf": {
+            "@type": "PublicationVolume",
+            "publisher": {"@type":"Organization","name":"ICMLC"}
+          }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 9,
+        "item": {
+          "@type": "ScholarlyArticle",
+          "name": "CCN+: A neuro-symbolic framework for deep learning with requirements",
+          "headline": "CCN+: A neuro-symbolic framework for deep learning with requirements",
+          "abstract": "We present CCN+, a neuro-symbolic framework that integrates logical requirements directly into neural network outputs using inference rules to ensure compliance, and adapts the standard binary cross-entropy loss for constraint satisfaction in deep learning.",
+          "url": "https://doi.org/g566hc",
+          "sameAs": "https://doi.org/g566hc",
+          "datePublished": "2024-08-01",
+          "image": "https://the-duck-lab.github.io/images/research/CCN+.png",
+          "identifier": "doi:10.1016/j.ijar.2024.109124",
+          "author": [
+            {"@type":"Person","name":"Eleonora Giunchiglia"},
+            {"@type":"Person","name":"Alex Tatomir"},
+            {"@type":"Person","name":"Mihaela Cătălina Stoian"},
+            {"@type":"Person","name":"Thomas Lukasiewicz"}
+          ],
+          "publisher": {
+            "@type": "Organization",
+            "name": "International Journal of Approximate Reasoning"
+          },
+          "isPartOf": {
+            "@type": "PublicationVolume",
+            "publisher": {"@type":"Organization","name":"International Journal of Approximate Reasoning"}
+          }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 10,
+        "item": {
+          "@type": "ScholarlyArticle",
+          "name": "ULLER: A Unified Language for Learning and Reasoning",
+          "headline": "ULLER: A Unified Language for Learning and Reasoning",
+          "abstract": "We introduce ULLER, a unified language for learning and reasoning that standardises how background knowledge is expressed across neuro-symbolic AI frameworks. ULLER provides first-order logic syntax with multiple semantic interpretations.",
+          "url": "https://doi.org/hbwt83",
+          "sameAs": "https://doi.org/hbwt83",
+          "datePublished": "2024-01-01",
+          "image": "https://the-duck-lab.github.io/images/research/ULLER.png",
+          "identifier": "doi:10.1007/978-3-031-71167-1_12",
+          "author": [
+            {"@type":"Person","name":"Emile van Krieken"},
+            {"@type":"Person","name":"Samy Badreddine"},
+            {"@type":"Person","name":"Robin Manhaeve"},
+            {"@type":"Person","name":"Eleonora Giunchiglia"}
+          ],
+          "publisher": {
+            "@type": "Organization",
+            "name": "NeSy (Spotlight)"
+          },
+          "isPartOf": {
+            "@type": "PublicationVolume",
+            "publisher": {"@type":"Organization","name":"NeSy (Spotlight)"}
+          }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 11,
+        "item": {
+          "@type": "ScholarlyArticle",
+          "name": "PiShield: A PyTorch Package for Learning with Requirements",
+          "headline": "PiShield: A PyTorch Package for Learning with Requirements",
+          "abstract": "We introduce PiShield, the first package ever allowing for the integration of (propositional or linear) requirements into the neural networks’ topology. PiShield guarantees compliance with these requirements, regardless of input.",
+          "url": "https://doi.org/hbg54h",
+          "sameAs": "https://doi.org/hbg54h",
+          "datePublished": "2024-01-01",
+          "image": "https://the-duck-lab.github.io/images/research/pishield_demo.png",
+          "identifier": "doi:10.48550/arXiv.2402.18285",
+          "author": [
+            {"@type":"Person","name":"Mihaela Cătălina Stoian"},
+            {"@type":"Person","name":"Alex Tatomir"},
+            {"@type":"Person","name":"Thomas Lukasiewicz"},
+            {"@type":"Person","name":"Eleonora Giunchiglia"}
+          ],
+          "publisher": {
+            "@type": "Organization",
+            "name": "IJCAI"
+          },
+          "isPartOf": {
+            "@type": "PublicationVolume",
+            "publisher": {"@type":"Organization","name":"IJCAI"}
+          }
+        }
+      }
+    ]
+  }
+}
+</script>
+
 
     </main>
     <footer>
