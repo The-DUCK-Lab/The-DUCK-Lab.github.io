@@ -1,5 +1,6 @@
 ---
 title: News
+description: "Latest updates from the DUCK Lab at Imperial College London — paper acceptances, project releases, talks, and lab milestones."
 layout: home
 nav:
   order: 4

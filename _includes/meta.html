@@ -20,17 +20,21 @@
 
 {% assign subtitle = site.subtitle %}
 
-{% assign description = page.description | default: site.description %}
-{% if site.subtitle %}
+{% if page.layout == "member" and page.description and page.content %}
+  {% assign member_role = page.description | replace: "<br>", " " | strip_html | strip %}
+  {% assign bio_snippet = page.content | strip_html | strip_newlines | truncate: 180 %}
   {% capture description -%}
-    {{ site.subtitle }}. {{ description }}
+    {{ page.name | strip_html }} — {{ member_role }} at the DUCK Lab, Imperial College London. {{ bio_snippet }}
   {%- endcapture %}
+{% else %}
+  {% assign description = page.description | default: site.description %}
 {% endif %}
-{% capture url -%}
-  {{ site.url }}{{ site.baseurl }}
-{%- endcapture %}
 
-{% assign description = description | xml_escape %}
+{% assign description = description | replace: "<br>", " " | strip_html | strip | xml_escape %}
+
+{% capture url -%}
+  {{ site.url }}{{ site.baseurl }}{{ page.url }}
+{%- endcapture %}
 
 {% assign png = "images/icon.png" | file_exists %}
 {% assign jpg = "images/icon.jpg" | file_exists %}

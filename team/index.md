@@ -1,5 +1,6 @@
 ---
 title: People
+description: "Meet the DUCK Lab team at Imperial College London — faculty, postdocs, and PhD students working on neuro-symbolic AI, constrained machine learning, theorem proving with LLMs, and verifiable reasoning."
 layout: home
 nav:
   order: 3

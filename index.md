@@ -1,5 +1,6 @@
 ---
 title: Home
+description: "The DUCK Lab at Imperial College London builds AI systems that don't just learn from data but reason over it — combining machine learning with structured knowledge, constraints, and calibrated uncertainty. Led by Eleonora Giunchiglia."
 layout: home
 nav:
   order: 0

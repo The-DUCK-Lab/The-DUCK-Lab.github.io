@@ -1,5 +1,6 @@
 ---
 title: Projects
+description: "Software, datasets, and tools from the DUCK Lab — including PiShield (constraints in PyTorch), ROAD-R (autonomous driving with logical requirements), and Pythagoras-Prover (efficient Lean theorem provers)."
 layout: home
 nav:
   order: 2

@@ -1,5 +1,6 @@
 ---
 title: Research
+description: "Peer-reviewed publications from the DUCK Lab at Imperial College London on neuro-symbolic AI, constrained deep learning, tabular data generation, theorem proving, and verifiable LLM reasoning."
 layout: home
 nav:
   order: 1
