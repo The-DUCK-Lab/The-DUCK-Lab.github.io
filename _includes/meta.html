@@ -82,26 +82,127 @@
   <meta property="og:type" content="website">
 {% endif %}
 
+{%- comment -%}
+  ── BASE WEBPAGE SCHEMA ────────────────────────────────────────
+  Emitted on every page so each URL has a typed identity in the
+  knowledge graph and ties back to the lab Organization.
+{%- endcomment -%}
 <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    {% if page.author %}
-      "@type": "BlogPosting",
-      "author": { "@type": "Person", "name": "{{ title }}" },
-      "datePublished": "{{ published }}",
-      "dateModified": "{{ updated }}",
-    {% else %}
-      "@type": "WebSite",
-    {% endif %}
-    "name": "{{ title }}",
-    "description": "{{ description }}",
-    "headline": "{{ title }}",
-    "publisher": {
-      "@type": "Organization",
-      "logo": { "@type": "ImageObject", "url": "{{ icon }}" }
-    },
-    "url": "{{ url }}"
+{
+  "@context": "https://schema.org",
+  "@type": {% if page.layout == "member" %}"ProfilePage"{% elsif page.author %}"Article"{% else %}"WebPage"{% endif %},
+  "name": "{{ title | default: site.title }}",
+  "description": "{{ description }}",
+  "url": "{{ url }}",
+  "inLanguage": "en",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "{{ site.title | xml_escape }}",
+    "url": "{{ '/' | absolute_url }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "DUCK Lab",
+    "logo": { "@type": "ImageObject", "url": "{{ icon | absolute_url }}" }
   }
+}
 </script>
+
+{%- comment -%}
+  ── ORGANIZATION SCHEMA (home page only) ───────────────────────
+  Powers Google's Knowledge Panel for "DUCK Lab" searches.
+{%- endcomment -%}
+{% if page.url == "/" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ResearchOrganization",
+  "name": "DUCK Lab",
+  "alternateName": "{{ site.subtitle | xml_escape }}",
+  "url": "{{ '/' | absolute_url }}",
+  "logo": "{{ icon | absolute_url }}",
+  "image": "{{ share | absolute_url }}",
+  "description": "{{ site.description | xml_escape }}",
+  "parentOrganization": {
+    "@type": "EducationalOrganization",
+    "name": "Imperial College London",
+    "url": "https://www.imperial.ac.uk",
+    "department": {
+      "@type": "Organization",
+      "name": "Department of Electrical and Electronic Engineering"
+    }
+  },
+  "founder": {
+    "@type": "Person",
+    "name": "Eleonora Giunchiglia",
+    "url": "{{ '/members/Eleonora_Giunchiglia.html' | absolute_url }}"
+  },
+  "member": [
+    {%- assign members = site.members | sort: "order" -%}
+    {% for m in members %}
+    {
+      "@type": "Person",
+      "name": "{{ m.name | strip_html | xml_escape }}",
+      "url": "{{ m.url | absolute_url }}"
+    }{% unless forloop.last %},{% endunless %}{% endfor %}
+  ],
+  "sameAs": [
+    "https://github.com/The-DUCK-Lab"
+  ]
+}
+</script>
+{% endif %}
+
+{%- comment -%}
+  ── PERSON SCHEMA (member pages) ───────────────────────────────
+  Builds a sameAs[] array from each member's links by looking up
+  the URL template in _data/types.yaml and substituting $VALUE.
+{%- endcomment -%}
+{% if page.layout == "member" %}
+{%- assign person_sameas = "" | split: "," -%}
+{% for link in page.links %}
+  {%- assign key = link[0] -%}
+  {%- assign value = link[1] -%}
+  {% if value and value != "" and key != "email" and key != "phone" %}
+    {%- assign type_info = site.data.types[key] -%}
+    {% if type_info.link %}
+      {%- assign full = type_info.link | replace: "$VALUE", value -%}
+      {%- assign person_sameas = person_sameas | push: full -%}
+    {% elsif value contains "://" %}
+      {%- assign person_sameas = person_sameas | push: value -%}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "{{ page.name | strip_html | xml_escape }}",
+  "jobTitle": "{{ page.description | replace: '<br>', ' ' | strip_html | strip | xml_escape }}",{% if page.image %}
+  "image": "{{ page.image | absolute_url }}",{% endif %}
+  "url": "{{ url }}",
+  "affiliation": [
+    {
+      "@type": "ResearchOrganization",
+      "name": "DUCK Lab",
+      "url": "{{ '/' | absolute_url }}"
+    },
+    {
+      "@type": "EducationalOrganization",
+      "name": "Imperial College London",
+      "url": "https://www.imperial.ac.uk"
+    }
+  ],
+  "worksFor": {
+    "@type": "ResearchOrganization",
+    "name": "DUCK Lab",
+    "url": "{{ '/' | absolute_url }}"
+  }{% if person_sameas.size > 0 %},
+  "sameAs": [{% for u in person_sameas %}
+    "{{ u }}"{% unless forloop.last %},{% endunless %}{% endfor %}
+  ]{% endif %}
+}
+</script>
+{% endif %}
 
 <link rel="alternate" type="application/rss+xml" href="{{ feed }}">
