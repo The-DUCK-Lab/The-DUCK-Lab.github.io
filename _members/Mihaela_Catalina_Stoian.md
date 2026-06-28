@@ -1,5 +1,5 @@
 ---
-name: "Mihaela Catalina<br>Stoian"
+name: "Mihaela Cătălina Stoian"
 scholar_name: "Mihaela Cătălina Stoian"
 image: images/mihaela.jpg
 description: Research Associate
