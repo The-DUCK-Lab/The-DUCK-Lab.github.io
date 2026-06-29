@@ -1,7 +1,7 @@
 # site properties and page defaults
 title: DUCK LAB
 subtitle: Data, Uncertainty, Constraints, Knowledge
-description: The DUCK Lab at Imperial College London builds AI systems that don't just learn from data, but reason over it — combining machine learning with structured knowledge, constraints, and calibrated uncertainty.
+description: The DUCK Lab is a neurosymbolic AI research group at Imperial College London, building machine learning systems that learn from data and reason over it — combining structured knowledge, logical constraints, and calibrated uncertainty.
 proofer: false
 
 

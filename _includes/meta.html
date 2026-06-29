@@ -118,13 +118,21 @@
   "@context": "https://schema.org",
   "@type": "ResearchOrganization",
   "name": "DUCK Lab",
-  "alternateName": "{{ site.subtitle | xml_escape }}",
+  "alternateName": [
+    "{{ site.subtitle | xml_escape }}",
+    "Neurosymbolic AI Lab",
+    "Neuro-symbolic AI Lab",
+    "DUCK Neurosymbolic Lab",
+    "DUCK Neuro-symbolic Lab"
+    "Imperial Neurosymbolic Lab",
+    "Imperial Neuro-symbolic Lab"
+  ],
   "url": "{{ '/' | absolute_url }}",
   "logo": "{{ icon | absolute_url }}",
   "image": "{{ share | absolute_url }}",
   "description": "{{ site.description | xml_escape }}",
   "foundingDate": "2024",
-  "keywords": "neuro-symbolic AI, constrained machine learning, theorem proving, large language models, verifiable reasoning, neural-symbolic integration, formal methods, knowledge graphs, autoformalization, calibrated uncertainty",
+  "keywords": "neurosymbolic lab, neuro-symbolic lab, neurosymbolic AI lab, neurosymbolic research group, neurosymbolic AI, neuro-symbolic AI, neural-symbolic integration, constrained machine learning, theorem proving, autoformalization, theorem proving with LLMs, large language models, verifiable reasoning, formal methods, knowledge graphs, calibrated uncertainty, logical constraints in deep learning",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "South Kensington Campus, Exhibition Road",
