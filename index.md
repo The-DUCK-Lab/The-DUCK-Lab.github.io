@@ -26,8 +26,8 @@ nav:
         <div class="duck-legend">
           <div class="leg-d"><b>Data</b><span>What we learn from</span></div>
           <div class="leg-u"><b>Uncertainty</b><span>What we don't know</span></div>
-          <div class="leg-c"><b>Constraints</b><span>Rules of the world</span></div>
-          <div class="leg-k"><b>Knowledge</b><span>Structure we trust</span></div>
+          <div class="leg-c"><b>Constraints</b><span>What we want to comply with</span></div>
+          <div class="leg-k"><b>Knowledge</b><span>What we want to build on</span></div>
         </div>
 
         <p class="lede">
