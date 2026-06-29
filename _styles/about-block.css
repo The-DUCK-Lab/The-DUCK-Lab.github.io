@@ -11,7 +11,7 @@
   margin: 0 0 32px 0;
 }
 
-.about-block p:first-of-type::first-letter {
+.about-block p:not(.about-meta):first-of-type::first-letter {
   font-family: var(--serif);
   font-size: 6rem;
   float: left;
@@ -26,6 +26,9 @@
   font-size: 0.95rem;
   line-height: 1.65;
   color: var(--ink-mute);
+}
+
+.about-block p + .about-meta {
   border-top: 1px solid var(--border);
   padding-top: 24px;
 }
