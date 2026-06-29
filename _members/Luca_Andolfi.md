@@ -5,7 +5,10 @@ image: images/luca.jpeg
 description: Research Fellow
 role: fellow
 order: 20
-homepage:  
+homepage:
+alumni_of:
+  - name: Sapienza University of Rome
+    url: https://www.uniroma1.it/en
 links:
   email:  
   twitter: 

@@ -5,7 +5,10 @@ image: images/dylan.jpg
 role: phd
 order: 60
 description: "PhD Student<br>(co-supervised)"
-homepage:  
+homepage:
+alumni_of:
+  - name: University of Oxford
+    url: https://www.ox.ac.uk
 links:
   email:  
   twitter: 
