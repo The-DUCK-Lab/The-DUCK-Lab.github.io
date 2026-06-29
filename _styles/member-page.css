@@ -15,9 +15,19 @@
 
 .member-page-links {
   display: flex;
-  gap: 14px;
+  flex-wrap: wrap;
+  gap: 10px;
   margin-top: 24px;
   font-size: 1.2rem;
+}
+
+.member-page-links .button span {
+  display: none;
+}
+
+.member-page-links .button {
+  padding: 4px;
+  margin: 0;
 }
 
 .member-page-links a,
