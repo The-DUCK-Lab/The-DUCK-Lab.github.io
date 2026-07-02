@@ -16,7 +16,7 @@
   group: featured
   style: contain
   image: images/projects/pishield_logo.png
-  link: https://sites.google.com/view/pishield/home
+  link: https://mihaela-stoian.github.io/PiShield/
   description: PiShield is the first package ever allowing for the integration of the requirements into the neural networks' topology, guaranteeing compliance with these requirements, regardless of input.
   repo: mihaela-stoian/PiShield
   tags:

@@ -240,6 +240,6 @@
     link: https://github.com/mihaela-stoian/PiShield
   - type: website
     text: Website
-    link: https://sites.google.com/view/pishield/home
+    link: https://mihaela-stoian.github.io/PiShield/
   plugin: sources.py
   file: sources.yaml
