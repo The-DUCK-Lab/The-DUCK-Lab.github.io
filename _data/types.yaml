@@ -18,6 +18,10 @@ undergrad:
 #  icon: fa-solid fa-microscope
   description: Undergraduate Student
 
+visitor:
+#  icon: fa-solid fa-microscope
+  description: Visitor
+
 programmer:
 #  icon: fa-solid fa-code
   description: Programmer
