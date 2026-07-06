@@ -14,7 +14,7 @@ nav:
       <span class="section-meta">Peer-reviewed works</span>
     </div>
 
-    {% assign citations = site.data.citations %}
+    {% assign citations = site.data.citations | where_exp: "item", "item.hide_from_research != true" %}
     {% assign years_to_display = "2026,2025,2024,2023,2022" | split: "," %}
 
     {% for year in years_to_display %}

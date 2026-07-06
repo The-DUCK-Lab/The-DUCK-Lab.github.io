@@ -1,3 +1,43 @@
+- id: url:https://iris.uniroma1.it/handle/11573/1759472
+  type: thesis
+  hide_from_research: true
+  title: "Quantity and Quality in AI Inferred Knowledge: Symbolic and Neurosymbolic Perspectives"
+  authors:
+  - Luca Andolfi
+  publisher: "Sapienza University of Rome"
+  date: '2026-01-28'
+  description: "This Thesis argues that before AI can be safely employed in high-stakes domains, it is crucial to reconcile a hidden tension between two requirements: providing abundant, non-trivial information (quantity) while ensuring it is trustworthy (quality). It studies pure logic-based and neuro-symbolic AI across two representative applications — question answering over knowledge bases and computer vision — showing how to improve each with respect to this quantity/quality dichotomy."
+
+
+- id: url:https://ceur-ws.org/Vol-3739/abstract-2.pdf
+  type: paper
+  hide_from_research: true
+  title: "Informativeness of Query Answers for Knowledge Bases (Extended Abstract)"
+  authors:
+  - Luca Andolfi
+  - Gianluca Cima
+  - Marco Console
+  - Maurizio Lenzerini
+  publisher: "International Workshop on Description Logics (DL 2024)"
+  date: '2024-06-18'
+  description: "Extended abstract summarising a formal framework to characterize the information that query answers for knowledge bases are able to represent, studying the informativeness of existing approaches and introducing novel notions of certain and possible answers."
+
+
+- id: doi:10.1609/aaai.v40i23.38963
+  type: paper
+  hide_from_research: true
+  publisher: AAAI
+  description: "We introduce Regularly Recurrent Answers (RRAs), a novel form of query answer for knowledge bases that represents infinite sets of tuples of constants via a simple generation mechanism. We show that RRAs can express a significant portion of the certain information derivable from unions of conjunctive queries over DL-Lite knowledge bases, and study the computational complexity of answering queries using this new language."
+
+
+- id: doi:10.1609/aaai.v38i9.28912
+  type: paper
+  hide_from_research: true
+  publisher: AAAI
+  date: '2024-03-24'
+  description: "Standard query answering for knowledge bases — returning certain answers (true in every model) or possible answers (true in some model) — is a lossy representation of the information that a knowledge base and query can provide. We introduce a formal framework to characterize the information that query answers are able to represent, use it to study the informativeness of existing approaches, and define a novel notion of answers allowing repetition of variables across tuples, showing they capture a meaningful form of information with favourable data complexity."
+
+
 - id: doi:10.48550/arXiv.2602.12586
   type: paper
   image: /images/research/mcdiffuse.png
@@ -10,6 +50,8 @@
   type: paper
   image: /images/research/r4rr.png
   publisher: NeurIPS
+  date: '2025-09-01'
+  link: https://proceedings.neurips.cc/paper_files/paper/2025/hash/e6bb63d00f597c380c012bd99c68b0c1-Abstract-Conference.html
   description: "Neurosymbolic AI models are prone to reasoning shortcuts — learning spurious correlations rather than the intended concepts. We introduce Prototypical Neurosymbolic architectures that avoid shortcuts at their root cause by training models to satisfy background knowledge while accounting for input similarity to a handful of labelled datapoints. We validate on the rsbench benchmark suite across synthetic (MNIST-EvenOdd, Kand-Logic) and real-world (BDD-OIA) tasks, showing significant improvements in learning the right concepts even in extremely low data regimes."
   buttons:
     - type: source

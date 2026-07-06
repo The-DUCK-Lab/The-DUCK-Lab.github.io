@@ -3,10 +3,20 @@
   members: [Yani]
   description: "🎉 A warm welcome to Yani Zhang, who is joining the DUCK Lab as an [AI for Math Summer Fellow](https://www.renaissancephilanthropy.org/ai-for-math-fund)! Yani is a final-year PhD student at ETH Zurich working on neural network theory and formal many-valued logic — huge congratulations on winning the fellowship from Renaissance Philanthropy! ✨"
 
+- date: 07-2026
+  title: Luca delivers AI training across UK Government
+  members: [Luca]
+  description: "Between May and July 2026, Luca delivered *AI Fundamentals* training to the Cabinet Office (National Security Secretariat), the Department for Science, Innovation and Technology, and the Ministry of Housing, Communities & Local Government, as part of his Research Fellow role at the Imperial Policy Forum."
+
 - date: 06-2026
   title: Lohith joins Capstone as intern!
   members: [Lohith]
   description: "🎉 Huge congratulations to Lohith, who will be starting an internship at [Capstone Investment Advisors](https://www.capstoneco.com) — a fantastic match for his research on neurosymbolic AI in financial markets! ✨"
+
+- date: 06-2026
+  title: Luca featured in the EEE department newsletter
+  members: [Luca]
+  description: "Luca was featured in the [Electrical and Electronic Engineering department newsletter](https://electricalandelectronicengineering.newsweaver.com/16mrh6sy1j/15izhudtu7b?lang=en&a=2&p=15105726&t=6755874) at Imperial College London."
 
 - date: 06-2026
   title: Invited talk at CILC 2026
@@ -23,6 +33,16 @@
   members: [Eleonora]
   description: "On 9 May, Eleonora spoke at the [OxBridge Women in CS Conference](https://www.oxwocs.com/events/6k75eef2rhctgi5alaxi7g8sfcs8d0) — a particularly special one for her, as she was herself an OxWoCS member during her PhD!"
 
+- date: 05-2026
+  title: Luca mentors AI Security Institute Policy Fellow
+  members: [Luca]
+  description: "Since May 2026, Luca has been mentoring Andy Corcoran, Head of National Security Partnering at the AI Security Institute, as part of an ongoing programme on *AI for Policy Making* — bridging cutting-edge AI research with government practice."
+
+- date: 04-2026
+  title: Luca receives Global Promise Endorsement
+  members: [Luca]
+  description: "🎉 Congratulations to Luca, who has been awarded a Global Promise Endorsement by the Royal Academy of Engineering!"
+
 - date: 04-2026
   title: Paper accepted at ICML 2026
   members: [Joshua, Mihaela, Eleonora]
@@ -33,20 +53,50 @@
   members: [Joshua, Eleonora]
   description: "Our paper [PiCSAR: Probabilistic Confidence Selection And Ranking for Reasoning Chains](https://doi.org/hbg52k) has been accepted at ACL (Findings) 2026."
 
+- date: 03-2026
+  title: Luca trains UK civil servants on AI and data governance
+  members: [Luca]
+  description: "In March 2026, Luca delivered *AI Fundamentals* training to the Cabinet Office (National Security Secretariat) and an *AI and Data Governance* session to the Department for Science, Innovation and Technology, GOV UK."
+
+- date: 03-2026
+  title: Invited talk at the Neurosymbolic AI Workshop
+  members: [Luca]
+  description: "Luca gave an invited talk on *Prototypical Neurosymbolic AI* at the Neurosymbolic AI Workshop, Imperial College London."
+
 - date: 02-2026
   title: Joshua joins MBZUAI as visiting student
   members: [Joshua]
   description: "Joshua is joining [MBZUAI](https://mbzuai.ac.ae/) as a visiting student, where he will be working on Theorem Proving with LLMs. Please contact him if you want to collaborate!"
 
 - date: 01-2026
+  title: Luca awarded his PhD in Artificial Intelligence
+  members: [Luca]
+  description: "🎉 Congratulations to Luca, who has been awarded his Italian National PhD in Artificial Intelligence from Sapienza University of Rome, supervised by Prof. Marco Console, on Knowledge Representation!"
+
+- date: 01-2026
   title: Survey published in TMLR
   members: [Mihaela, Eleonora]
   description: "Our survey [A Survey on Deep Learning Approaches for Tabular Data Generation](https://doi.org/hbg52m) has been published in Transactions on Machine Learning Research (TMLR)."
+
+- date: 11-2025
+  title: Luca joins the Imperial Policy Forum as Research Fellow in AI
+  members: [Luca]
+  description: "🎉 Luca has joined the Strategic Engagement Division at Imperial College London as a Research Fellow in AI with the Imperial Policy Forum, delivering research and expert-led training on AI directly relevant to government policy."
+
+- date: 11-2025
+  title: Luca begins supervising Master's thesis on neurosymbolic learning
+  members: [Luca]
+  description: "From November 2025 to July 2026, Luca is supervising Lolézio Viora Marquet's Master's thesis, *Prototype-Augmented Neurosymbolic Learning under Multi-Modal Data Distributions*."
 
 - date: 10-2025
   title: Frontiers in AI invited talk at ECAI 2025
   members: [Eleonora]
   description: "Eleonora gave one of the [Frontiers in AI](https://ecai2025.org/frontiers-in-ai/) invited talks at ECAI 2025."
+
+- date: 09-2025
+  title: Paper accepted at NeurIPS 2025
+  members: [Luca, Eleonora]
+  description: "Our paper [Right for the Right Reasons: Avoiding Reasoning Shortcuts via Prototypical Neurosymbolic AI](https://proceedings.neurips.cc/paper_files/paper/2025/hash/e6bb63d00f597c380c012bd99c68b0c1-Abstract-Conference.html) has been accepted at NeurIPS 2025."
 
 - date: 08-2025
   title: AI for Math Fund
