@@ -49,11 +49,6 @@
   description: "Our paper [Can I Have Your Order? Monte-Carlo Tree Search for Slot Filling Ordering in Diffusion Language Models](https://doi.org/hbz7sm) has been accepted at ICML 2026."
 
 - date: 03-2026
-  title: Invited talk at the Neurosymbolic AI Workshop
-  members: [Lohith]
-  description: "Lohith gave an invited talk at the Neurosymbolic AI Workshop on Neurosymbolic AI for safe financial portfolio construction."
-
-- date: 03-2026
   title: Paper accepted at ACL (Findings)
   members: [Joshua, Eleonora]
   description: "Our paper [PiCSAR: Probabilistic Confidence Selection And Ranking for Reasoning Chains](https://doi.org/hbg52k) has been accepted at ACL (Findings) 2026."
@@ -67,6 +62,11 @@
   title: Invited talk at the Neurosymbolic AI Workshop
   members: [Luca]
   description: "Luca gave an invited talk on *Prototypical Neurosymbolic AI* at the Neurosymbolic AI Workshop, Imperial College London."
+
+- date: 03-2026
+  title: Invited talk at the Neurosymbolic AI Workshop
+  members: [Lohith]
+  description: "Lohith gave an invited talk at the Neurosymbolic AI Workshop on Neurosymbolic AI for safe financial portfolio construction."
 
 - date: 02-2026
   title: Joshua joins MBZUAI as visiting student
