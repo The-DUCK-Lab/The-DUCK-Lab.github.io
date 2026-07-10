@@ -1,4 +1,9 @@
 - date: 07-2026
+  title: Joshua at ICML 2026 in Seoul!
+  members: [Joshua]
+  description: "☕ Joshua is at [ICML 2026](https://icml.cc/) in Seoul presenting [Can I Have Your Order? Monte-Carlo Tree Search for Slot Filling Ordering in Diffusion Language Models](https://doi.org/hbz7sm) — using MCTS to decide the order in which diffusion language models fill in slots. If you'd like to grab a coffee with him, let us know!"
+
+- date: 07-2026
   title: Yani joins as AI for Math Summer Fellow!
   members: [Yani]
   description: "🎉 A warm welcome to Yani Zhang, who is joining the DUCK Lab as an [AI for Math Summer Fellow](https://www.renaissancephilanthropy.org/ai-for-math-fund)! Yani is a final-year PhD student at ETH Zurich working on neural network theory and formal many-valued logic — huge congratulations on winning the fellowship from Renaissance Philanthropy! ✨"
