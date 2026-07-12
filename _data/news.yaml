@@ -8,6 +8,11 @@
   members: [Mihaela, Eleonora]
   description: "Mihaela and Eleonora will give a [tutorial](https://www.auai.org/uai2026/tutorials) at UAI 2026 in Amsterdam (17–21 August): *Beyond Soft Penalties: Hard Constraints for Neural Networks with Continuous Outputs* — how to enforce hard constraints on neural networks with continuous outputs."
 
+- date: 08-2026
+  title: Invited talk at TPM 2026 in Amsterdam
+  members: [Eleonora]
+  description: "Eleonora will give an invited talk at [TPM 2026](https://tractable-probabilistic-modeling.github.io/tpm2026/) — the 9th Workshop on Tractable Probabilistic Modeling — in Amsterdam on 21 August, co-located with UAI 2026. Looking forward to meeting this amazing community! ✨"
+
 - date: 07-2026
   title: Joshua at ICML 2026 in Seoul!
   members: [Joshua]
