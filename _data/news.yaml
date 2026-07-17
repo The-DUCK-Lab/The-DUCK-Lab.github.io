@@ -19,6 +19,11 @@
   description: "Eleonora took part in a panel on *The future of AI: what's next and what matters?*, organised by the [Imperial Policy Forum](https://www.imperial.ac.uk/the-forum/) and chaired by [Prof Tom Coates](https://profiles.imperial.ac.uk/t.coates). The discussions were amazing!"
 
 - date: 07-2026
+  title: Mihaela awarded an IX-WAI Early Career Grant
+  members: [Mihaela]
+  description: "🎉 Huge congratulations to Mihaela, who has been awarded one of Imperial College London's IX-WAI Early Career Grants! ✨"
+
+- date: 07-2026
   title: Joshua at ICML 2026 in Seoul!
   members: [Joshua]
   description: "☕ Joshua is at [ICML 2026](https://icml.cc/) in Seoul presenting [Can I Have Your Order? Monte-Carlo Tree Search for Slot Filling Ordering in Diffusion Language Models](https://doi.org/hbz7sm) — using MCTS to decide the order in which diffusion language models fill in slots. If you'd like to grab a coffee with him, let us know!"
