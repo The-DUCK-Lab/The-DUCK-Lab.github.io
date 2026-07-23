@@ -80,6 +80,53 @@
     \ with favourable data complexity."
   plugin: sources.py
   file: sources.yaml
+- id: url:https://openreview.net/forum?id=Sh5uraNAMu
+  title: Can Transformers Perform LTLf Strategic Reasoning? Sometimes
+  authors:
+  - Giuseppe De Giacomo
+  - Antonio Di Stasio
+  - Eleonora Giunchiglia
+  - Eleni Kougioumtzi
+  publisher: NeSy
+  date: '2026-09-01'
+  link: ''
+  type: paper
+  image: /images/research/nesy2026_eleni.png
+  description: "We propose a transformer-based system for reactive synthesis of Linear\
+    \ Temporal Logic on finite traces (LTLf), pairing one model that predicts a specification's\
+    \ realizability with another that generates a satisfying strategy. Across extensive\
+    \ experiments the transformers often identify realizability and sometimes produce\
+    \ correct \u2014 and notably simpler \u2014 strategies, but a deeper analysis\
+    \ shows they lean on unintended shortcuts rather than genuine reasoning, with\
+    \ effectiveness so far limited to less complex cases."
+  plugin: sources.py
+  file: sources.yaml
+- id: url:https://openreview.net/forum?id=Wz5gx3Y731
+  title: Constraint-Satisfying Reinforcement Learning via a Neuro-Symbolic Projection
+    Layer
+  authors:
+  - Jacob Brand
+  - Francesco Belardinelli
+  - Eleonora Giunchiglia
+  publisher: NeSy
+  date: '2026-09-01'
+  link: ''
+  type: paper
+  image: /images/research/nesy2026_jack.png
+  description: "We introduce CCN+RL, a neuro-symbolic framework that enforces propositional\
+    \ constraints on a deep RL policy's action distribution by construction. Building\
+    \ on Coherent-by-Construction Networks Plus (CCN+), it projects softmax action\
+    \ probabilities onto the constraint-satisfying region of the action space at each\
+    \ timestep through a fully differentiable symbolic projection layer, adding only\
+    \ a single pass through a fixed dependency graph at inference. It supports both\
+    \ hard enforcement (zero mass on invalid actions, per-step guarantees) and soft\
+    \ enforcement (graded down-weighting of invalid actions). On CartPole, CliffWalking,\
+    \ and Seaquest, CCN+RL attains hard runtime safety with competitive task reward,\
+    \ while its soft mode reaches lower attempted-violation rates \u2014 evidence\
+    \ that the policy internalises the constraints rather than relying on an external\
+    \ shield."
+  plugin: sources.py
+  file: sources.yaml
 - id: doi:10.48550/arXiv.2602.12586
   title: Can I Have Your Order? Monte-Carlo Tree Search for Slot Filling Ordering
     in Diffusion Language Models
