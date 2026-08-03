@@ -1,3 +1,23 @@
+# Structured-data syntax fix
+
+- [x] Compare the local template with `origin/main` and the deployed homepage.
+- [x] Reproduce the JSON-LD parse failure from the deployed HTML.
+- [x] Validate the local one-character comma fix against both JSON-LD blocks.
+- [x] Commit only `_includes/meta.html` as an atomic fix.
+- [ ] Ask for confirmation before pushing the fix.
+
+## Review
+
+The deployed Organization JSON-LD is missing a comma after
+`"DUCK Neuro-symbolic Lab"`, so its `alternateName` array cannot be parsed.
+The user's local `_includes/meta.html` already contains the correct comma but
+was never committed or pushed. Across all pages in the live sitemap, exactly one
+of 32 JSON-LD blocks fails: the homepage Organization block. Applying only the
+local comma change makes all 32 blocks parse successfully with Ruby's JSON
+parser. The fix is committed atomically as `ddc7a8d`.
+
+---
+
 # Search Console sitemap fetch diagnosis
 
 - [x] Confirm the deployed text sitemap and `robots.txt` responses.
