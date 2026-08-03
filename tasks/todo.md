@@ -1,20 +1,20 @@
-# Google search title
+# Search Console sitemap fallback
 
-- [x] Inspect the current title and structured-data implementation.
-- [x] Confirm current Google title-link and site-name guidance.
-- [x] Add a dedicated homepage SEO title without changing its navigation label.
-- [x] Align the homepage heading, Open Graph site name, and WebSite data.
-- [x] Render and inspect the generated homepage metadata.
-- [x] Review the final diff and commit the change atomically.
+- [x] Verify the generated XML sitemap over HTTP and as Googlebot.
+- [x] Validate its XML structure and every listed URL.
+- [x] Obtain Search Console's detailed error.
+- [x] Add a Google-supported text sitemap to bypass XML parsing.
+- [x] Advertise the text sitemap from `robots.txt`.
+- [x] Render and validate the text sitemap output.
+- [x] Review and commit the change atomically.
 
 ## Review
 
-Implemented an explicit `seo_title` for the homepage while retaining `title: Home`
-for navigation. The title, Open Graph, Twitter, WebPage, and WebSite signals now
-agree on the preferred page and site names. The homepage hero is also a semantic
-`h1`.
+Added a dynamically generated `/sitemap.txt` containing the site's navigable
+pages and member profiles, and made it the sitemap advertised by `robots.txt`.
+The existing XML sitemap remains available, but Google can now use the simpler
+text format that bypasses the failing XML parsing path.
 
-Verification passed for the rendered metadata values, JSON-LD parsing, YAML,
-Ruby plugin syntax, and `git diff --check`. A full Jekyll build could not run on
-the host's Ruby 4 because the repository's Ruby 3.1-era `eventmachine` dependency
-does not compile there; GitHub Actions uses Ruby 3.1.
+Verification rendered 12 unique, absolute, same-origin HTTPS URLs with no blank
+lines or duplicates. The front matter parses successfully and `git diff --check`
+passes.

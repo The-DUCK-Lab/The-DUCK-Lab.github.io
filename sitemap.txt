@@ -1,0 +1,13 @@
+---
+layout: null
+permalink: /sitemap.txt
+sitemap: false
+---
+{%- assign sitemap_pages = site.pages | where_exp: "item", "item.nav" | sort: "nav.order" -%}
+{%- assign sitemap_members = site.members | sort: "order" -%}
+{%- capture sitemap_content -%}
+{% for item in sitemap_pages %}{{ item.url | absolute_url }}
+{% endfor %}{% for item in sitemap_members %}{{ item.url | absolute_url }}
+{% endfor %}
+{%- endcapture -%}
+{{- sitemap_content | strip -}}
