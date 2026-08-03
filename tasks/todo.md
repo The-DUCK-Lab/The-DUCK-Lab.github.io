@@ -1,20 +1,26 @@
-# Search Console sitemap fallback
+# Search Console sitemap fetch diagnosis
 
-- [x] Verify the generated XML sitemap over HTTP and as Googlebot.
-- [x] Validate its XML structure and every listed URL.
-- [x] Obtain Search Console's detailed error.
-- [x] Add a Google-supported text sitemap to bypass XML parsing.
-- [x] Advertise the text sitemap from `robots.txt`.
-- [x] Render and validate the text sitemap output.
-- [x] Review and commit the change atomically.
+- [x] Confirm the deployed text sitemap and `robots.txt` responses.
+- [x] Compare normal and Google crawler HTTP/TLS/DNS behaviour.
+- [x] Verify current Google sitemap requirements from primary documentation.
+- [x] Inspect repository deployment and domain configuration for a shared fetch issue.
+- [ ] Run Search Console Live URL Inspection on the exact submitted sitemap URL.
+- [ ] Confirm that the Search Console property has no unresolved manual action.
+- [x] Identify whether a code change can address the root cause.
+- [x] Avoid changing production without evidence of a site-side defect.
 
 ## Review
 
-Added a dynamically generated `/sitemap.txt` containing the site's navigable
-pages and member profiles, and made it the sitemap advertised by `robots.txt`.
-The existing XML sitemap remains available, but Google can now use the simpler
-text format that bypasses the failing XML parsing path.
+The deployed `/sitemap.txt` returns a direct HTTP 200 as `text/plain` to normal,
+desktop Googlebot, and smartphone Googlebot requests. It contains 12 absolute
+HTTPS URLs, all of which return 200. `/sitemap.xml` also returns a direct 200 as
+`application/xml`, validates successfully, and contains 13 reachable URLs.
+`robots.txt` allows crawling and advertises the text sitemap. The standard
+GitHub Pages DNS records and TLS certificate are valid.
 
-Verification rendered 12 unique, absolute, same-origin HTTPS URLs with no blank
-lines or duplicates. The front matter parses successfully and `git diff --check`
-passes.
+No shared site-side delivery defect was found. Google's documentation classifies
+`Sitemap could not be read` as a fetch failure and prescribes Live URL Inspection
+of the exact submitted URL, where `Crawl allowed?` must be `Yes` and `Page fetch`
+must be `Successful`. It also lists unresolved manual actions and transient
+Google/server errors as possible causes. Those two Search Console-only checks
+remain before any further production change can be justified.
