@@ -1,5 +1,6 @@
 ---
 title: Home
+seo_title: DUCK Lab - Imperial College London
 description: "The DUCK Lab at Imperial College London builds AI systems that don't just learn from data but reason over it — combining machine learning with structured knowledge, constraints, and calibrated uncertainty. Led by Eleonora Giunchiglia."
 layout: home
 nav:
@@ -16,12 +17,12 @@ nav:
   <div class="container">
     <div class="hero-grid">
       <div class="hero-body">
-        <div class="mega-lockup">
-          <div class="mega-duck" aria-label="DUCK">
+        <h1 class="mega-lockup">
+          <span class="mega-duck" aria-label="DUCK">
             <span class="l d">D</span><span class="l u">U</span><span class="l c">C</span><span class="l k">K</span>
-          </div>
-          <div class="mega-lab">Lab</div>
-        </div>
+          </span>
+          <span class="mega-lab">Lab</span>
+        </h1>
 
         <div class="duck-legend">
           <div class="leg-d"><b>Data</b><span>What we learn from</span></div>
