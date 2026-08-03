@@ -4,7 +4,7 @@
 - [x] Compare normal and Google crawler HTTP/TLS/DNS behaviour.
 - [x] Verify current Google sitemap requirements from primary documentation.
 - [x] Inspect repository deployment and domain configuration for a shared fetch issue.
-- [ ] Run Search Console Live URL Inspection on the exact submitted sitemap URL.
+- [x] Run Search Console Live URL Inspection on the exact submitted sitemap URL.
 - [ ] Confirm that the Search Console property has no unresolved manual action.
 - [x] Identify whether a code change can address the root cause.
 - [x] Avoid changing production without evidence of a site-side defect.
@@ -22,5 +22,9 @@ No shared site-side delivery defect was found. Google's documentation classifies
 `Sitemap could not be read` as a fetch failure and prescribes Live URL Inspection
 of the exact submitted URL, where `Crawl allowed?` must be `Yes` and `Page fetch`
 must be `Successful`. It also lists unresolved manual actions and transient
-Google/server errors as possible causes. Those two Search Console-only checks
-remain before any further production change can be justified.
+Google/server errors as possible causes.
+
+Search Console's live test of `/sitemap.txt` passed on 3 August 2026 at 16:30
+and reported that the URL is available to Google. This confirms Google's live
+crawler can retrieve the deployed sitemap. Only the Manual Actions report and
+Search Console's asynchronous sitemap-report processing remain to check.
