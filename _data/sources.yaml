@@ -38,6 +38,26 @@
   description: "Standard query answering for knowledge bases — returning certain answers (true in every model) or possible answers (true in some model) — is a lossy representation of the information that a knowledge base and query can provide. We introduce a formal framework to characterize the information that query answers are able to represent, use it to study the informativeness of existing approaches, and define a novel notion of answers allowing repetition of variables across tuples, showing they capture a meaningful form of information with favourable data complexity."
 
 
+- id: arxiv:2608.28229
+  type: paper
+  image: /images/fallback.svg
+  title: "Stay Within Your Bounds: Distance-Guided Decoding for Guaranteed Context-Free Grammar Compliance"
+  authors:
+  - Vincenzo Collura
+  - Karim Tit
+  - Eleonora Giunchiglia
+  - Mike Papadakis
+  - Maxime Cordy
+  publisher: "EMNLP (Findings)"
+  date: '2026-10-24'
+  link: https://arxiv.org/abs/2608.28229
+  description: "We introduce SWYB, a distance-guided decoding framework that guarantees language-model outputs comply with context-free grammars within finite token budgets. Bounded pushdown summaries guide horizon-aware pruning and beam search toward accepting states. Across JSON, SQL, and Linear Temporal Logic tasks, SWYB achieves consistent syntactic validity while improving completion quality over existing constrained-decoding baselines."
+  buttons:
+    - type: source
+      text: Code
+      link: https://github.com/Enzossssss/SWYB
+
+
 - id: url:https://openreview.net/forum?id=Sh5uraNAMu
   type: paper
   link: ""
