@@ -80,6 +80,32 @@
     \ with favourable data complexity."
   plugin: sources.py
   file: sources.yaml
+- id: arxiv:2608.28229
+  title: 'Stay Within Your Bounds: Distance-Guided Decoding for Guaranteed Context-Free
+    Grammar Compliance'
+  authors:
+  - Vincenzo Collura
+  - Karim Tit
+  - Eleonora Giunchiglia
+  - Mike Papadakis
+  - Maxime Cordy
+  publisher: EMNLP (Findings)
+  date: '2026-10-24'
+  link: https://arxiv.org/abs/2608.28229
+  type: paper
+  image: /images/fallback.svg
+  description: We introduce SWYB, a distance-guided decoding framework that guarantees
+    language-model outputs comply with context-free grammars within finite token budgets.
+    Bounded pushdown summaries guide horizon-aware pruning and beam search toward
+    accepting states. Across JSON, SQL, and Linear Temporal Logic tasks, SWYB achieves
+    consistent syntactic validity while improving completion quality over existing
+    constrained-decoding baselines.
+  buttons:
+  - type: source
+    text: Code
+    link: https://github.com/Enzossssss/SWYB
+  plugin: sources.py
+  file: sources.yaml
 - id: url:https://openreview.net/forum?id=Sh5uraNAMu
   title: Can Transformers Perform LTLf Strategic Reasoning? Sometimes
   authors:
