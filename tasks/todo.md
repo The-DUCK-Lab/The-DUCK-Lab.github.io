@@ -1,3 +1,27 @@
+# Add Findings of EMNLP 2026 paper to Research
+
+- [x] Inspect the publication schema, ordering, and Research-page rendering.
+- [x] Verify the title, author order, venue, date, and canonical paper link.
+- [x] Add the paper to the hand-edited publication source.
+- [x] Validate the YAML and generated Research-page inclusion.
+- [x] Commit the publication update atomically and ask before pushing.
+
+## Review
+
+Added *Stay Within Your Bounds* as the first paper in the 2026 Research list,
+with the verified author order, Findings of EMNLP venue, official conference
+date, arXiv abstract link, and public code repository. The shared fallback image
+is used until a paper-specific graphic is available.
+
+The publication source parses as valid YAML, contains no duplicate identifiers,
+and passes required-field, author-order, image-existence, and Research-page
+ordering checks. The local Manubot/Jekyll dependencies are not installed, so the
+generated citation and deployed page will be verified through the repository's
+CI workflow after an approved push. The content change was committed atomically
+as `89caf7b`.
+
+---
+
 # Findings of EMNLP 2026 news item
 
 - [x] Match the existing news-feed format and ordering.
