@@ -6,6 +6,8 @@
 - [x] Congratulate Vincenzo on his first paper.
 - [x] Validate the YAML, link, ordering, and Markdown structure.
 - [x] Commit the news item atomically and ask before pushing.
+- [x] Verify public Google Scholar profiles for the named collaborators.
+- [x] Add the verified profile links to the announcement.
 
 ## Review
 
@@ -20,6 +22,12 @@ remains newest-first, and the Markdown link and milestone text are present. A
 full local Jekyll build was unavailable because the checkout's bundled gems are
 not installed; the link uses the same Markdown structure as existing entries.
 The announcement was committed atomically as `2c61344`.
+
+Karim Tit, Mike Papadakis, and Maxime Cordy now link to verified public Google
+Scholar profiles. No public Scholar profile could be found for Vincenzo Collura,
+so his name links to his official University of Luxembourg profile rather than
+risking a false attribution. This can be replaced if a Scholar URL is provided.
+The collaborator-link update was committed atomically as `8223d55`.
 
 ---
 
