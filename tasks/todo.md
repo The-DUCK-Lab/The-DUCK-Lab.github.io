@@ -1,3 +1,28 @@
+# Findings of EMNLP 2026 news item
+
+- [x] Match the existing news-feed format and ordering.
+- [x] Verify the paper title, authors, affiliations, and venue on arXiv.
+- [x] Add a warm announcement highlighting the Luxembourg collaboration.
+- [x] Congratulate Vincenzo on his first paper.
+- [x] Validate the YAML, link, ordering, and Markdown structure.
+- [x] Commit the news item atomically and ask before pushing.
+
+## Review
+
+Added an August 2026 announcement for *Stay Within Your Bounds*, linking to the
+arXiv abstract page and noting its acceptance as a long paper to Findings of
+EMNLP 2026. The copy recognises Vincenzo Collura, Karim Tit, Mike Papadakis, and
+Maxime Cordy at the University of Luxembourg and congratulates Vincenzo on his
+first paper.
+
+The news YAML parses successfully, all required fields are present, the feed
+remains newest-first, and the Markdown link and milestone text are present. A
+full local Jekyll build was unavailable because the checkout's bundled gems are
+not installed; the link uses the same Markdown structure as existing entries.
+The announcement was committed atomically as `2c61344`.
+
+---
+
 # Structured-data syntax fix
 
 - [x] Compare the local template with `origin/main` and the deployed homepage.
