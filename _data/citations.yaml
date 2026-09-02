@@ -93,7 +93,7 @@
   date: '2026-10-24'
   link: https://arxiv.org/abs/2608.28229
   type: paper
-  image: /images/fallback.svg
+  image: /images/research/2026_EMNLP_SWYB.png
   description: We introduce SWYB, a distance-guided decoding framework that guarantees
     language-model outputs comply with context-free grammars within finite token budgets.
     Bounded pushdown summaries guide horizon-aware pruning and beam search toward

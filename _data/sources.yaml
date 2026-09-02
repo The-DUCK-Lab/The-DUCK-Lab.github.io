@@ -40,7 +40,7 @@
 
 - id: arxiv:2608.28229
   type: paper
-  image: /images/fallback.svg
+  image: /images/research/2026_EMNLP_SWYB.png
   title: "Stay Within Your Bounds: Distance-Guided Decoding for Guaranteed Context-Free Grammar Compliance"
   authors:
   - Vincenzo Collura
