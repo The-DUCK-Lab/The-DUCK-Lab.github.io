@@ -1,7 +1,7 @@
 ---
 name: Ahmed Almohammed
 scholar_name: "Ahmed Almohammed"
-image: images/ahmed.jpeg
+image: images/ahmed.jpg
 role: phd
 order: 90
 description: PhD Student
