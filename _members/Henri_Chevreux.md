@@ -19,12 +19,12 @@ knows_about:
   - Mechanistic Interpretability
   - Safe AI
 links:
-  email:  
+  email: h.chevreux26@imperial.ac.uk
   twitter: 
-  github: 
+  github: henriChevreux
   x: 
   linkedin: henri-chevreux-7aaa261b6
-  home-page: 
+  home-page: https://henrichevreux.github.io
   orcid:
 ---
 
