@@ -12,15 +12,12 @@ alumni_of:
 knows_about:
   - Neuro-symbolic AI in financial markets
   - Constrained reinforcement learning
-  - Foundation models for trading
-  - Dynamic portfolio construction
+  - Synthetic financial data generation
+  - Volatility surface modelling
 links:
-  email:  
-  twitter: 
-  github:  
-  x: 
-  home-page: 
-  orcid: 
+  linkedin: https://www.linkedin.com/in/lohithkonathala/
+  x: https://x.com/lohithkonathala
+  orcid: https://orcid.org/0009-0006-5753-4478
 ---
 
-Lohith is a first-year PhD student in the DUCK Lab at Imperial College London, supervised by Dr. Eleonora Giunchiglia. He holds an MEng in Information & Computer Engineering from the University of Cambridge and, prior to his PhD studies, worked on low-latency speech-language models for speech synthesis at a venture-backed startup. His current research focuses on the application of Neurosymbolic AI in Financial Markets, including constrained reinforcement learning for dynamic portfolio construction and efficient constraint enforcement over categorical variables with applications in foundation models for automated trading.
+Lohith is a PhD student in the DUCK Lab at Imperial College London, supervised by Dr. Eleonora Giunchiglia. He holds a BA, MEng in Information & Computer Engineering from Trinity College, University of Cambridge. His research broadly focuses on scalable constraint enforcement in neural networks with applications in quantitative finance. His research interests currently include incorporating domain knowledge into synthetic financial data generation and constrained deep learning methods for portfolio construction. He is particularly interested in applying this work to volatility trading, an interest shaped by an internship at Capstone Investment Advisors.
