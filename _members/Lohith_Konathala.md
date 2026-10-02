@@ -15,9 +15,9 @@ knows_about:
   - Synthetic financial data generation
   - Volatility surface modelling
 links:
-  linkedin: https://www.linkedin.com/in/lohithkonathala/
-  x: https://x.com/lohithkonathala
-  orcid: https://orcid.org/0009-0006-5753-4478
+  linkedin: lohithkonathala
+  x: lohithkonathala
+  orcid: 0009-0006-5753-4478
 ---
 
-Lohith is a PhD student in the DUCK Lab at Imperial College London, supervised by Dr. Eleonora Giunchiglia. He holds a BA, MEng in Information & Computer Engineering from Trinity College, University of Cambridge. His research broadly focuses on scalable constraint enforcement in neural networks with applications in quantitative finance. His research interests currently include incorporating domain knowledge into synthetic financial data generation and constrained deep learning methods for portfolio construction. He is particularly interested in applying this work to volatility trading, an interest shaped by an internship at Capstone Investment Advisors.
+Lohith is a PhD student in the DUCK Lab at Imperial College London, supervised by Dr. Eleonora Giunchiglia. He holds a BA, MEng in Information & Computer Engineering from Trinity College, University of Cambridge. His research broadly focuses on scalable constraint enforcement in neural networks with applications in quantitative finance. His research interests currently include incorporating domain knowledge into synthetic financial data generation and constrained deep learning methods for portfolio construction. He is particularly interested in applying this work to volatility trading, following an internship at Capstone Investment Advisors.
