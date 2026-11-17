@@ -174,7 +174,7 @@
     "url": "{{ '/members/Eleonora_Giunchiglia.html' | absolute_url }}"
   },
   "member": [
-    {%- assign members = site.members | sort: "order" -%}
+    {%- assign members = site.members | where_exp: "m", "m.past != true" | sort: "order" -%}
     {% for m in members %}
     {
       "@type": "Person",

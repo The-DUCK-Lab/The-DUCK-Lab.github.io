@@ -7,6 +7,10 @@ nav:
   tooltip: Meet the team
 ---
 
+{% assign members = site.members | sort: "order" %}
+{% assign current_members = members | where_exp: "m", "m.past != true" %}
+{% assign past_members = members | where_exp: "m", "m.past == true" %}
+
 <section>
   <div class="container">
     <div class="section-head">
@@ -15,10 +19,25 @@ nav:
     </div>
 
     <div class="team-grid">
-      {% assign members = site.members | sort: "order" %}
-      {% for m in members %}
+      {% for m in current_members %}
         {% include member-card.html member=m %}
       {% endfor %}
     </div>
   </div>
 </section>
+
+{% if past_members.size > 0 %}
+<section>
+  <div class="container">
+    <div class="section-head section-head-small">
+      <h2 class="section-title">Past <em>members</em></h2>
+    </div>
+
+    <div class="team-grid team-grid-small">
+      {% for m in past_members %}
+        {% include member-card.html member=m %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}

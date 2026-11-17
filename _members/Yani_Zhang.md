@@ -4,6 +4,7 @@ scholar_name: "Yani Zhang"
 image: images/yani.jpg
 role: visitor
 order: 70
+past: true
 description: "Visiting PhD Student<br>from ETH Zurich"
 homepage: https://www.mins.ee.ethz.ch/people/show/yanizhang
 alumni_of:

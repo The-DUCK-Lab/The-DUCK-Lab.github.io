@@ -4,7 +4,7 @@
   Defaults to the first member by `order` (typically the PI).
 {% endcomment %}
 
-{% assign sorted = site.members | sort: "order" %}
+{% assign sorted = site.members | where_exp: "m", "m.past != true" | sort: "order" %}
 {% assign default_member = sorted | first %}
 
 <div class="team-showcase" data-active="{{ default_member.slug }}">
