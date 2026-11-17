@@ -75,5 +75,41 @@
     grid-template-columns: 1fr;
   }
 }
+.section-head-small {
+  margin-bottom: 32px;
+}
+
+.section-head-small .section-title {
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+}
+
+.team-grid-small {
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.team-grid-small .person-overlay {
+  padding: 16px;
+}
+
+.team-grid-small .person-name {
+  font-size: 1.1rem;
+}
+
+.team-grid-small .person-role {
+  font-size: 0.6rem;
+}
+
+@media (max-width: 900px) {
+  .team-grid-small {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+  }
+}
+@media (max-width: 600px) {
+  .team-grid-small {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
 /*# sourceMappingURL=member-card.css.map */
