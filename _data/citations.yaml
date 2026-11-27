@@ -1,5 +1,32 @@
 # DO NOT EDIT, GENERATED AUTOMATICALLY
 
+- id: arxiv:2611.33527
+  title: 'Casper: A Projection-Based Neurosymbolic Layer for Scalable & Guaranteed
+    Constraint Satisfaction'
+  authors:
+  - Lohith Konathala
+  - Luca Andolfi
+  - Eleonora Giunchiglia
+  publisher: NeurIPS (Spotlight)
+  date: '2026-11-24'
+  link: https://arxiv.org/abs/2611.33527
+  type: paper
+  image: /images/research/casper.png
+  description: "We propose Casper, a neurosymbolic layer that guarantees constraint\
+    \ satisfaction while scaling at inference time. It casts constraint satisfaction\
+    \ as a closed-form Euclidean projection onto the feasible region, computed in\
+    \ a single forward pass, and is fully automated and differentiable, so it composes\
+    \ with any neural predictor. Across MNIST arithmetic (up to 1024 digits), Sudoku,\
+    \ and Warcraft pathfinding, Casper is the only method producing guaranteed-valid\
+    \ outputs at scale: on 30\xD730 Warcraft grids, exact baselines time out and approximate\
+    \ ones find valid paths under 7% of the time, while Casper does so 100% of the\
+    \ time."
+  buttons:
+  - type: source
+    text: Code
+    link: https://github.com/lkonathala25/casper
+  plugin: sources.py
+  file: sources.yaml
 - id: url:https://iris.uniroma1.it/handle/11573/1759472
   title: 'Quantity and Quality in AI Inferred Knowledge: Symbolic and Neurosymbolic
     Perspectives'
